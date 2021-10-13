@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.martin1912.BetaExtras.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "MixinDimension",
+    "MixinItem"
+  ],
+  "server": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

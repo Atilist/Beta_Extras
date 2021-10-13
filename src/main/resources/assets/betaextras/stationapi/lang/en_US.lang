@@ -1,0 +1,267 @@
+# Blocks
+tile.thicc_briccs0.name=Thicc Briccs
+tile.thicc_briccs1.name=Cut Supah Thicc Bricc
+tile.thicc_briccs2.name=Supah Thicc Bricc
+tile.thicc_briccs3.name=Smol Briccs
+tile.thicc_briccs4.name=Thinn Briccs
+tile.thicc_briccs5.name=Half Thicc Bricc
+tile.thicc_briccs7.name=Half Supah Thicc Bricc
+tile.thicc_briccs13.name=UwU Bricks
+tile.thicc_briccs14.name=Omni Bricks
+tile.thicc_briccs15.name=Recursive Bricks
+
+tile.colored_bricks0.name=White Bricks
+tile.colored_bricks1.name=Orange Bricks
+tile.colored_bricks2.name=Magenta Bricks
+tile.colored_bricks3.name=Lightblue Bricks
+tile.colored_bricks4.name=Yellow Bricks
+tile.colored_bricks5.name=Lime Bricks
+tile.colored_bricks6.name=Pink Bricks
+tile.colored_bricks7.name=Gray Bricks
+tile.colored_bricks8.name=Lightgray Bricks
+tile.colored_bricks9.name=Cyan Bricks
+tile.colored_bricks10.name=Purple Bricks
+tile.colored_bricks11.name=Blue Bricks
+tile.colored_bricks12.name=Brown Bricks
+tile.colored_bricks13.name=Green Bricks
+tile.colored_bricks14.name=Red Bricks
+tile.colored_bricks15.name=Black Bricks
+
+tile.colored_planks0.name=White Planks
+tile.colored_planks1.name=Orange Planks
+tile.colored_planks2.name=Magenta Planks
+tile.colored_planks3.name=Lightblue Planks
+tile.colored_planks4.name=Yellow Planks
+tile.colored_planks5.name=Lime Planks
+tile.colored_planks6.name=Pink Planks
+tile.colored_planks7.name=Gray Planks
+tile.colored_planks8.name=Lightgray Planks
+tile.colored_planks9.name=Cyan Planks
+tile.colored_planks10.name=Purple Planks
+tile.colored_planks11.name=Blue Planks
+tile.colored_planks12.name=Brown Planks
+tile.colored_planks13.name=Green Planks
+tile.colored_planks14.name=Red Planks
+tile.colored_planks15.name=Black Planks
+
+tile.colored_terracotta0.name=White Stained Clay
+tile.colored_terracotta1.name=Orange Stained Clay
+tile.colored_terracotta2.name=Magenta Stained Clay
+tile.colored_terracotta3.name=Lightblue Stained Clay
+tile.colored_terracotta4.name=Yellow Stained Clay
+tile.colored_terracotta5.name=Lime Stained Clay
+tile.colored_terracotta6.name=Pink Stained Clay
+tile.colored_terracotta7.name=Gray Stained Clay
+tile.colored_terracotta8.name=Lightgray Stained Clay
+tile.colored_terracotta9.name=Cyan Stained Clay
+tile.colored_terracotta10.name=Purple Stained Clay
+tile.colored_terracotta11.name=Blue Stained Clay
+tile.colored_terracotta12.name=Brown Stained Clay
+tile.colored_terracotta13.name=Green Stained Clay
+tile.colored_terracotta14.name=Red Stained Clay
+tile.colored_terracotta15.name=Black Stained Clay
+
+tile.glazed_terracotta0.name=White Glazed Terracotta
+tile.glazed_terracotta1.name=Orange Glazed Terracotta
+tile.glazed_terracotta2.name=Magenta Glazed Terracotta
+tile.glazed_terracotta3.name=Lightblue Glazed Terracotta
+tile.glazed_terracotta4.name=Yellow Glazed Terracotta
+tile.glazed_terracotta5.name=Lime Glazed Terracotta
+tile.glazed_terracotta6.name=Pink Glazed Terracotta
+tile.glazed_terracotta7.name=Gray Glazed Terracotta
+tile.glazed_terracotta8.name=Lightgray Glazed Terracotta
+tile.glazed_terracotta9.name=Cyan Glazed Terracotta
+tile.glazed_terracotta10.name=Purple Glazed Terracotta
+tile.glazed_terracotta11.name=Blue Glazed Terracotta
+tile.glazed_terracotta12.name=Brown Glazed Terracotta
+tile.glazed_terracotta13.name=Green Glazed Terracotta
+tile.glazed_terracotta14.name=Red Glazed Terracotta
+tile.glazed_terracotta15.name=Black Glazed Terracotta
+
+tile.colored_thicc_briccs0.name=White Thicc Briccs
+tile.colored_thicc_briccs1.name=Orange Thicc Briccs
+tile.colored_thicc_briccs2.name=Magenta Thicc Briccs
+tile.colored_thicc_briccs3.name=Lightblue Thicc Briccs
+tile.colored_thicc_briccs4.name=Yellow Thicc Briccs
+tile.colored_thicc_briccs5.name=Lime Thicc Briccs
+tile.colored_thicc_briccs6.name=Pink Thicc Briccs
+tile.colored_thicc_briccs7.name=Gray Thicc Briccs
+tile.colored_thicc_briccs8.name=Lightgray Thicc Briccs
+tile.colored_thicc_briccs9.name=Cyan Thicc Briccs
+tile.colored_thicc_briccs10.name=Purple Thicc Briccs
+tile.colored_thicc_briccs11.name=Blue Thicc Briccs
+tile.colored_thicc_briccs12.name=Brown Thicc Briccs
+tile.colored_thicc_briccs13.name=Green Thicc Briccs
+tile.colored_thicc_briccs14.name=Red Thicc Briccs
+tile.colored_thicc_briccs15.name=Black Thicc Briccs
+
+tile.alpha_briccs0.name=Alpha Bricks
+tile.alpha_briccs1.name=Alpha Thicc Briccs
+tile.alpha_briccs2.name=Alpha Cut Supah Thicc Bricc
+tile.alpha_briccs3.name=Alpha Supah Thicc Bricc
+tile.alpha_briccs4.name=Alpha Smol Briccs
+tile.alpha_briccs5.name=Alpha Thinn Briccs
+tile.alpha_briccs6.name=Alpha Half Thicc Bricc
+tile.alpha_briccs8.name=Alpha Half Supah Thicc Bricc
+
+tile.raw_thicc_briccs0.name=Raw Smol Briccs
+tile.raw_thicc_briccs1.name=Raw Cut Supah Thicc Bricc
+tile.raw_thicc_briccs2.name=Raw Supah Thicc Bricc
+tile.raw_thicc_briccs3.name=Raw Hypa Thicc Bricc Top
+tile.raw_thicc_briccs4.name=Raw Hypa Thicc Bricc Middle
+tile.raw_thicc_briccs5.name=Raw Hypa Thicc Bricc Bottom
+tile.raw_thicc_briccs6.name=Raw Hypa Thicc Bricc Glue
+
+tile.thicc_flesh0.name=Thicc Ink Sac
+tile.thicc_flesh1.name=Thicc Raw Porkchop
+tile.thicc_flesh2.name=Thicc Cooked Porkchop
+tile.thicc_flesh3.name=Thicc Ink Sans SANS AAHHHH SANS AAAAAAAAAAHHHH SANS AHHHHHH
+tile.thicc_flesh4.name=Dirt Bricks
+tile.thicc_flesh5.name=Eyes Destroyer
+tile.thicc_flesh6.name=Fabricks
+
+tile.uncolored_terracotta0.name=Hardened Clay
+tile.uncolored_terracotta1.name=Glazed Terracotta
+tile.uncolored_terracotta2.name=Glazed Terracotta Edge
+tile.uncolored_terracotta6.name=Glazed Terracotta Corner
+
+tile.soft_block0.name=Pillow
+tile.soft_block1.name=Loomed Block
+tile.soft_block2.name=Leather Cube
+
+tile.alphium_ore0.name=Alphium Ore
+tile.alphium_ore1.name=Block of Alphium
+
+tile.colored_pillows0.name=White Pillow
+tile.colored_pillows1.name=Orange Pillow
+tile.colored_pillows2.name=Magenta Pillow
+tile.colored_pillows3.name=Lightblue Pillow
+tile.colored_pillows4.name=Yellow Pillow
+tile.colored_pillows5.name=Lime Pillow
+tile.colored_pillows6.name=Pink Pillow
+tile.colored_pillows7.name=Gray Pillow
+tile.colored_pillows8.name=Lightgray Pillow
+tile.colored_pillows9.name=Cyan Pillow
+tile.colored_pillows10.name=Purple Pillow
+tile.colored_pillows11.name=Blue Pillow
+tile.colored_pillows12.name=Brown Pillow
+tile.colored_pillows13.name=Green Pillow
+tile.colored_pillows14.name=Red Pillow
+tile.colored_pillows15.name=Black Pillow
+
+tile.colored_loomed_blocks0.name=White Loomed Block
+tile.colored_loomed_blocks1.name=Orange Loomed Block
+tile.colored_loomed_blocks2.name=Magenta Loomed Block
+tile.colored_loomed_blocks3.name=Lightblue Loomed Block
+tile.colored_loomed_blocks4.name=Yellow Loomed Block
+tile.colored_loomed_blocks5.name=Lime Loomed Block
+tile.colored_loomed_blocks6.name=Pink Loomed Block
+tile.colored_loomed_blocks7.name=Gray Loomed Block
+tile.colored_loomed_blocks8.name=Lightgray Loomed Block
+tile.colored_loomed_blocks9.name=Cyan Loomed Block
+tile.colored_loomed_blocks10.name=Purple Loomed Block
+tile.colored_loomed_blocks11.name=Blue Loomed Block
+tile.colored_loomed_blocks12.name=Brown Loomed Block
+tile.colored_loomed_blocks13.name=Green Loomed Block
+tile.colored_loomed_blocks14.name=Red Loomed Block
+tile.colored_loomed_blocks15.name=Black Loomed Block
+
+tile.colored_leather_cubes0.name=White Leather Cube
+tile.colored_leather_cubes1.name=Orange Leather Cube
+tile.colored_leather_cubes2.name=Magenta Leather Cube
+tile.colored_leather_cubes3.name=Lightblue Leather Cube
+tile.colored_leather_cubes4.name=Yellow Leather Cube
+tile.colored_leather_cubes5.name=Lime Leather Cube
+tile.colored_leather_cubes6.name=Pink Leather Cube
+tile.colored_leather_cubes7.name=Gray Leather Cube
+tile.colored_leather_cubes8.name=Lightgray Leather Cube
+tile.colored_leather_cubes9.name=Cyan Leather Cube
+tile.colored_leather_cubes10.name=Purple Leather Cube
+tile.colored_leather_cubes11.name=Blue Leather Cube
+tile.colored_leather_cubes12.name=Brown Leather Cube
+tile.colored_leather_cubes13.name=Green Leather Cube
+tile.colored_leather_cubes14.name=Red Leather Cube
+tile.colored_leather_cubes15.name=Black Leather Cube
+
+tile.big_brown_mushroom0.name=Big Brown Mushroom
+tile.big_brown_mushroom1.name=Bigger Brown Mushroom
+tile.big_brown_mushroom2.name=Biggerer Brown Mushroom
+
+tile.big_red_mushroom0.name=Big Red Mushroom
+tile.big_red_mushroom1.name=Bigger Red Mushroom
+tile.big_red_mushroom2.name=Biggerer Red Mushroom
+
+tile.extra_logs0.name=Swamp Log
+tile.extra_leaves0.name=Swamp Leaves
+
+tile.super_sponge0.name=Dry Super Sponge
+tile.super_sponge1.name=Wet Super Sponge
+
+tile.old_briccs0.name=Old Bricks
+tile.old_briccs1.name=Old Thicc Briccs
+tile.old_briccs2.name=Old Cut Supah Thicc Bricc
+tile.old_briccs3.name=Old Supah Thicc Bricc
+tile.old_briccs4.name=Old Smol Briccs
+tile.old_briccs5.name=Old Thinn Briccs
+tile.old_briccs6.name=Old Half Thicc Bricc
+tile.old_briccs8.name=Old Half Supah Thicc Bricc
+
+tile.hypa_thicc_briccs0.name=Hypa Thicc Bricc Top
+tile.hypa_thicc_briccs1.name=Hypa Thicc Bricc Middle
+tile.hypa_thicc_briccs2.name=Hypa Thicc Bricc Bottom
+tile.hypa_thicc_briccs3.name=Hypa Thicc Bricc Glue
+tile.hypa_thicc_briccs4.name=Old Hypa Thicc Bricc Top
+tile.hypa_thicc_briccs5.name=Old Hypa Thicc Bricc Middle
+tile.hypa_thicc_briccs6.name=Old Hypa Thicc Bricc Bottom
+tile.hypa_thicc_briccs7.name=Old Hypa Thicc Bricc Glue
+tile.hypa_thicc_briccs8.name=Alpha Hypa Thicc Bricc Top
+tile.hypa_thicc_briccs9.name=Alpha Hypa Thicc Bricc Middle
+tile.hypa_thicc_briccs10.name=Alpha Hypa Thicc Bricc Bottom
+tile.hypa_thicc_briccs11.name=Alpha Hypa Thicc Bricc Glue
+
+tile.volcano_blocks0.name=Volcano Heart
+tile.volcano_blocks1.name=Carved Rough Basalt
+tile.volcano_blocks2.name=Clean Basalt
+tile.volcano_blocks3.name=Carved Clean Basalt
+tile.volcano_blocks4.name=Smooth Basalt
+tile.volcano_blocks5.name=Carved Smooth Basalt
+tile.volcano_blocks6.name=Basalt Thicc Briccs
+tile.volcano_blocks7.name=Basalt Bricks
+tile.volcano_blocks8.name=Pumice
+tile.volcano_blocks9.name=Carved Pumice
+tile.volcano_blocks10.name=Smooth Pumice
+tile.volcano_blocks11.name=Dark Pumice
+tile.volcano_blocks12.name=Rough Basalt
+tile.volcano_blocks13.name=Basalt Pebbles
+
+tile.red_sandstone0.name=Smooth Red Sandstone
+tile.red_sandstone1.name=Red Sandstone
+tile.red_sandstone2.name=Rough Red Sandstone
+tile.red_sandstone3.name=Red Sandstone Stacks
+tile.red_sandstone4.name=Cut Red Sandstone
+tile.red_sandstone5.name=Carved Red Sandstone
+
+tile.finite_liquid0.name=Volcanic Lava
+
+tile.dense_snow0.name=Dense Snow
+tile.dense_snow1.name=Very Dense Snow
+tile.dense_snow2.name=Snow Slush
+
+tile.dense_ice0.name=Dense Ice
+tile.dense_ice1.name=Very Dense Ice
+tile.dense_ice2.name=Ice Iron Ore
+tile.dense_ice3.name=Ice Gold Ore
+tile.dense_ice4.name=Ice Bricks
+tile.dense_ice5.name=Ice Thicc Briccs
+
+# Items
+item.raw_thicc_bricc.name=Raw Thicc Bricc
+item.thicc_bricc.name=Thicc Bricc
+item.alphium.name=Alphium
+item.color_remover.name=Paint Remover
+item.rotator.name=Rotator
+item.mushroom_fertilizer.name=Mushroom Fertilizer
+item.cursed_essence.name=Cursed Essence
+item.dirt_brick.name=Dirt Brick
+item.smol_basalt_rock.name=Smol Basalt Rock
+item.thicc_basalt_rock.name=Thicc Basalt Rock
