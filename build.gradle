@@ -90,11 +90,6 @@ dependencies {
 
 	modImplementation "com.github.calmilamsy:ModMenu:03023e1"
 
-/* HowManyItems */
-	modImplementation('com.github.calmilamsy:HowManyItems-Fabric-Unofficial:6af40ed18d') {
-		exclude group: 'com.github.ModificationStation', module: 'StationAPI'
-	}
-
 	//modImplementation ("com.github.calmilamsy:HowManyItems-Fabric-Unofficial:e804d57:dev") {
 	//	exclude module: "StationAPI"
 	//}
