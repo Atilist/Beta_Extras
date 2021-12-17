@@ -38,31 +38,7 @@ public class AlphiumOre extends TemplateBlockBase {
                 return TextureListener.AlphiumBlock;
             }
             default:
-                return super.getTextureForSide(side, meta);}
-    }
-
-    @Override
-    public void onAdjacentBlockUpdate(Level level, int x, int y, int z, int id) {
-        int meta = level.getTileMeta(x, y, z);
-        if (meta == 2 && id > 0 && BlockBase.BY_ID[id].getEmitsRedstonePower()) {
-            level.placeBlockWithMetaData(x, y, z, BlockListener.alphiumOre.id, 3);
-            for (int i = 0; i < 10; i++) {
-                level.addParticle("reddust", x + 0.8, y + 1, z + 0.2, 0, 0, 0);
-                level.addParticle("reddust", x + 0.8, y + 1, z + 0.8, 0, 0, 0);
-                level.addParticle("reddust", x + 0.2, y + 1, z + 0.2, 0, 0, 0);
-                level.addParticle("reddust", x + 0.2, y + 1, z + 0.8, 0, 0, 0);
-
-                level.addParticle("smoke", x + 0.5 , y + 1, z + 0.5, 0, 0, 0);
-            }
-        }
-    }
-
-    public int getDropId(int meta, Random rand) {
-        if (meta == 3) {
-            return ItemListener.pureAlphium.id;
-        }
-        else {
-            return BlockListener.alphiumOre.id;
+                return super.getTextureForSide(side, meta);
         }
     }
 }

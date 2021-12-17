@@ -336,6 +336,9 @@ public class RecipeListener {
                 SmeltingRegistry.addSmeltingRecipe(new ItemInstance(BlockListener.volcanoBlocks, 1, 4), new ItemInstance(BlockListener.volcanoBlocks, 1, 5));
                 SmeltingRegistry.addSmeltingRecipe(new ItemInstance(BlockListener.volcanoBlocks, 1, 2), new ItemInstance(BlockListener.volcanoBlocks, 1, 3));
                 SmeltingRegistry.addSmeltingRecipe(new ItemInstance(BlockListener.volcanoBlocks, 1, 8), new ItemInstance(BlockListener.volcanoBlocks, 1, 10));
+
+                SmeltingRegistry.addSmeltingRecipe(new ItemInstance(BlockListener.denseIce, 1, 2), new ItemInstance(ItemBase.ironIngot));
+                SmeltingRegistry.addSmeltingRecipe(new ItemInstance(BlockListener.denseIce, 1, 3), new ItemInstance(ItemBase.goldIngot));
                 break;
             }
         }

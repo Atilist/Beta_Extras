@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "betaextras",
-  "version": "1.0.0pre1",
+  "version": "1.0.1",
 
   "name": "Beta Extras",
   "description": "Adds a whole lot of blocks and some structures to the Overworld. Foundation mod of the entire Alternate Adventure project.",
@@ -26,10 +26,6 @@
       "net.martin1912.BetaExtras.Recipes.RecipeListener"
     ]
   },
-
-  "mixins": [
-    "betaextras.mixins.json"
-  ],
 
   "depends": {
     "minecraft": "1.0.0-beta.7.3",

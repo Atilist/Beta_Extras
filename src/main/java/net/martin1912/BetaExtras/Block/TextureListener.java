@@ -190,9 +190,6 @@ public class TextureListener {
 
         AlphiumOre = terrain.addTexture(of(modID, "Alphium/AlphiumOre")).index;
         AlphiumBlock = terrain.addTexture(of(modID, "Alphium/AlphiumBlock")).index;
-        EnergizedAlphium = terrain.addTexture(of(modID, "Alphium/EnergizedAlphium")).index;
-        PureAlphiumCompound = terrain.addTexture(of(modID, "Alphium/PureAlphiumCompound")).index;
-        PureAlphiumBlock = terrain.addTexture(of(modID, "Alphium/PureAlphiumBlock")).index;
 
         WhitePillow = terrain.addTexture(of(modID, "ColoredPillows/WhitePillow")).index;
         OrangePillow = terrain.addTexture(of(modID, "ColoredPillows/OrangePillow")).index;
