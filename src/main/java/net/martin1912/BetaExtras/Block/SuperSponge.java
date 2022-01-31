@@ -22,7 +22,27 @@ public class SuperSponge extends TemplateBlockBase {
 
     @Override
     public void onAdjacentBlockUpdate(Level level, int x, int y, int z, int id) {
+        if (level.getTileMeta(x, y, z) == 0 && level.hasRedstonePower(x, y, z)) {
+            drainWater(level, x, y, z);
+        }
+    }
 
+    private void drainWater(Level level, int x, int y, int z) {
+        boolean hasWaterNearby = false;
+        for (int xOffset = -1; xOffset <= 1; xOffset++)
+            for (int yOffset = -1; yOffset <= 1; yOffset++)
+                for (int zOffset = -1; zOffset <= 1; zOffset++)
+                    if (level.getTileId(x + xOffset, y + yOffset, z + zOffset) == BlockBase.FLOWING_WATER.id || level.getTileId(x + xOffset, y + yOffset, z + zOffset) == BlockBase.STILL_WATER.id)
+                        hasWaterNearby = true;
+
+        if (hasWaterNearby) {
+            for (int xOffset = -2; xOffset <= 2; xOffset++)
+                for (int yOffset = -2; yOffset <= 2; yOffset++)
+                    for (int zOffset = -2; zOffset <= 2; zOffset++)
+                        if (level.getTileId(x + xOffset, y + yOffset, z + zOffset) == BlockBase.FLOWING_WATER.id || level.getTileId(x + xOffset, y + yOffset, z + zOffset) == BlockBase.STILL_WATER.id)
+                            level.setTile(x + xOffset, y + yOffset, z + zOffset, 0);
+            level.placeBlockWithMetaData(x, y, z, BlockListener.superSponge.id, 1);
+        }
     }
 
     @Override
@@ -50,31 +70,10 @@ public class SuperSponge extends TemplateBlockBase {
 
     @Override
     public boolean canUse(Level level, int x, int y, int z, PlayerBase player) {
-       int meta = level.getTileMeta(x, y, z);
-       switch (meta) {
-           case 0:
-               int heightoffset = 2;
-               while (heightoffset != -3) {
-                   int xoffset = 0;
-                   while (xoffset < 7) {
-                       int line = 0;
-                       while (line < 7) {
-                           int watercheck = level.getTileId(x - 3 + xoffset, y + heightoffset, z - 3 + line);
-                           if (watercheck == BlockBase.FLOWING_WATER.id || watercheck == BlockBase.STILL_WATER.id) {
-                               level.placeBlockWithMetaData(x - 3 + xoffset, y + heightoffset, z - 3 + line, 0, 0);
-                           }
-                           line++;
-                       }
-                       xoffset++;
-                   }
-                   heightoffset--;
-               }
-               level.placeBlockWithMetaData(x, y, z, BlockBase.SPONGE.id, 0);
-               level.placeBlockWithMetaData(x, y, z, BlockListener.superSponge.id, 1);
-               return true;
-           case 1:
-               return false;
-       }
-       return true;
+        if (level.getTileMeta(x, y, z) == 0) {
+            drainWater(level, x, y, z);
+            return true;
+        }
+        return false;
     }
 }

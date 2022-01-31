@@ -19,7 +19,6 @@
   "entrypoints": {
     "stationapi:event_bus": [
       "net.martin1912.BetaExtras.Block.BlockListener",
-      "net.martin1912.BetaExtras.Block.ModelListener",
       "net.martin1912.BetaExtras.Block.TextureListener",
       "net.martin1912.BetaExtras.Item.ItemListener",
       "net.martin1912.BetaExtras.level.gen.ChunkListener",

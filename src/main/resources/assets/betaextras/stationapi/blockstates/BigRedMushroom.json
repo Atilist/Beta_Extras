@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "meta=0": {
+      "model": "betaextras:BigRedMushroom"
+    },
+    "meta=1": {
+      "model": "betaextras:BiggerRedMushroom"
+    },
+    "meta=2": {
+      "model": "betaextras:BiggererRedMushroom"
+    }
+  }
+}
