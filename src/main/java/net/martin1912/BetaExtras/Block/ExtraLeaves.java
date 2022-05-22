@@ -6,8 +6,8 @@ import net.fabricmc.api.Environment;
 import net.minecraft.block.BlockBase;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.render.block.FoliageColour;
+import net.minecraft.level.BlockView;
 import net.minecraft.level.Level;
-import net.minecraft.level.TileView;
 import net.modificationstation.stationapi.api.block.HasMetaNamedBlockItem;
 import net.modificationstation.stationapi.api.registry.Identifier;
 import net.modificationstation.stationapi.api.template.block.TemplateBlockBase;
@@ -26,7 +26,7 @@ public class ExtraLeaves extends TemplateBlockBase {
 
     @Override
     public void onScheduledTick(Level level, int x, int y, int z, Random rand) {
-        if (!level.isClient) {
+        if (!level.isServerSide) {
             int var6 = level.getTileMeta(x, y, z);
             if ((var6 & 8) != 0) {
                 byte var7 = 4;
@@ -146,23 +146,13 @@ public class ExtraLeaves extends TemplateBlockBase {
     }
 
     public int getTextureForSide(int side, int meta) {
-        switch (meta) {
-            case 0:
-                return TextureListener.SwampLeaves;
-            case 1:
-                return TextureListener.SkyLeaves;
-            case 2:
-            case 3:
-            case 4:
-            case 5:
-            case 6:
-            case 7:
-            case 8:
-                return TextureListener.SwampLeaves;
-            case 9:
-                return TextureListener.SkyLeaves;
-            default:
-                return super.getTextureForSide(side, meta);}
+        return switch (meta) {
+            case 0 -> TextureListener.SwampLeaves;
+            case 1 -> TextureListener.SkyLeaves;
+            case 2, 3, 4, 5, 6, 7, 8 -> TextureListener.SwampLeaves;
+            case 9 -> TextureListener.SkyLeaves;
+            default -> super.getTextureForSide(side, meta);
+        };
 
     }
 
@@ -183,7 +173,7 @@ public class ExtraLeaves extends TemplateBlockBase {
 
     @Override
     @Environment(EnvType.CLIENT)
-    public int getColourMultiplier(TileView arg, int x, int y, int z) {
+    public int getColourMultiplier(BlockView arg, int x, int y, int z) {
         int var5 = arg.getTileMeta(x, y, z);
         if ((var5 & 1) == 1) {
             return FoliageColour.method_1079();

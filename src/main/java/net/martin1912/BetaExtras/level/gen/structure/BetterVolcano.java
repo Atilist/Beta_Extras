@@ -56,7 +56,7 @@ public class BetterVolcano extends Structure {
                         double asymmetricalZ = zOffset / (randomizerMonoZ + 2.0) * inverterZ;
                         double pythagorasThing = Math.sqrt(xOffset * xOffset + zOffset * zOffset);
                         if (pythagorasThing < radius / 2.0 - SymmetricalX - SymmetricalZ + rand.nextInt(2) + asymmetricalX + asymmetricalZ) {
-                            level.placeBlockWithMetaData(x + xOffset, -20 + yOffset, z + zOffset, BlockListener.staticBasalt.id, 15);
+                            level.setTileWithMetadata(x + xOffset, -20 + yOffset, z + zOffset, BlockListener.staticBasalt.id, 15);
                         }
                     }
                 }
@@ -72,13 +72,13 @@ public class BetterVolcano extends Structure {
             }
             for (int height = 127; height > 2; height--) {
                 if (level.getTileId(x, height, z) != 0) {
-                    level.placeBlockWithMetaData(x, height, z, BlockListener.finiteLiquid.id, 15);
+                    level.setTileWithMetadata(x, height, z, BlockListener.finiteLiquid.id, 15);
                 }
                 if (level.getTileId(x, height + 1, z) == 0) {
                     break;
                 }
             }
-            level.placeBlockWithMetaData(x, 2, z, BlockListener.volcanoBlocks.id, 0);
+            level.setTileWithMetadata(x, 2, z, BlockListener.volcanoBlocks.id, 0);
             return true;
         }
         return false;

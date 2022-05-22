@@ -3,8 +3,8 @@ package net.martin1912.BetaExtras.Block;
 import net.martin1912.BetaExtras.Item.ItemListener;
 import net.minecraft.block.BlockBase;
 import net.minecraft.block.material.Material;
+import net.minecraft.level.BlockView;
 import net.minecraft.level.Level;
-import net.minecraft.level.TileView;
 import net.minecraft.util.maths.Box;
 import net.modificationstation.stationapi.api.block.HasMetaNamedBlockItem;
 import net.modificationstation.stationapi.api.registry.Identifier;
@@ -48,54 +48,22 @@ public class StaticBasalt extends TemplateBlockBase {
 
     public void method_1060(int i) {
         switch (i) {
-            case 0:
-                setBoundingBox(0.0F, 0.0F, 0.0F, 1.0F, 0.0625F, 1.0F);
-                break;
-            case 1:
-                setBoundingBox(0.0F, 0.0F, 0.0F, 1.0F, 0.125F, 1.0F);
-                break;
-            case 2:
-                setBoundingBox(0.0F, 0.0F, 0.0F, 1.0F, 0.1875F, 1.0F);
-                break;
-            case 3:
-                setBoundingBox(0.0F, 0.0F, 0.0F, 1.0F, 0.25F, 1.0F);
-                break;
-            case 4:
-                setBoundingBox(0.0F, 0.0F, 0.0F, 1.0F, 0.3125F, 1.0F);
-                break;
-            case 5:
-                setBoundingBox(0.0F, 0.0F, 0.0F, 1.0F, 0.375F, 1.0F);
-                break;
-            case 6:
-                setBoundingBox(0.0F, 0.0F, 0.0F, 1.0F, 0.4375F, 1.0F);
-                break;
-            case 7:
-                setBoundingBox(0.0F, 0.0F, 0.0F, 1.0F, 0.5F, 1.0F);
-                break;
-            case 8:
-                setBoundingBox(0.0F, 0.0F, 0.0F, 1.0F, 0.5625F, 1.0F);
-                break;
-            case 9:
-                setBoundingBox(0.0F, 0.0F, 0.0F, 1.0F, 0.625F, 1.0F);
-                break;
-            case 10:
-                setBoundingBox(0.0F, 0.0F, 0.0F, 1.0F, 0.6875F, 1.0F);
-                break;
-            case 11:
-                setBoundingBox(0.0F, 0.0F, 0.0F, 1.0F, 0.75F, 1.0F);
-                break;
-            case 12:
-                setBoundingBox(0.0F, 0.0F, 0.0F, 1.0F, 0.8125F, 1.0F);
-                break;
-            case 13:
-                setBoundingBox(0.0F, 0.0F, 0.0F, 1.0F, 0.875F, 1.0F);
-                break;
-            case 14:
-                setBoundingBox(0.0F, 0.0F, 0.0F, 1.0F, 0.9375F, 1.0F);
-                break;
-            case 15:
-                setBoundingBox(0.0F, 0.0F, 0.0F, 1.0F, 1.0F, 1.0F);
-                break;
+            case 0 -> setBoundingBox(0.0F, 0.0F, 0.0F, 1.0F, 0.0625F, 1.0F);
+            case 1 -> setBoundingBox(0.0F, 0.0F, 0.0F, 1.0F, 0.125F, 1.0F);
+            case 2 -> setBoundingBox(0.0F, 0.0F, 0.0F, 1.0F, 0.1875F, 1.0F);
+            case 3 -> setBoundingBox(0.0F, 0.0F, 0.0F, 1.0F, 0.25F, 1.0F);
+            case 4 -> setBoundingBox(0.0F, 0.0F, 0.0F, 1.0F, 0.3125F, 1.0F);
+            case 5 -> setBoundingBox(0.0F, 0.0F, 0.0F, 1.0F, 0.375F, 1.0F);
+            case 6 -> setBoundingBox(0.0F, 0.0F, 0.0F, 1.0F, 0.4375F, 1.0F);
+            case 7 -> setBoundingBox(0.0F, 0.0F, 0.0F, 1.0F, 0.5F, 1.0F);
+            case 8 -> setBoundingBox(0.0F, 0.0F, 0.0F, 1.0F, 0.5625F, 1.0F);
+            case 9 -> setBoundingBox(0.0F, 0.0F, 0.0F, 1.0F, 0.625F, 1.0F);
+            case 10 -> setBoundingBox(0.0F, 0.0F, 0.0F, 1.0F, 0.6875F, 1.0F);
+            case 11 -> setBoundingBox(0.0F, 0.0F, 0.0F, 1.0F, 0.75F, 1.0F);
+            case 12 -> setBoundingBox(0.0F, 0.0F, 0.0F, 1.0F, 0.8125F, 1.0F);
+            case 13 -> setBoundingBox(0.0F, 0.0F, 0.0F, 1.0F, 0.875F, 1.0F);
+            case 14 -> setBoundingBox(0.0F, 0.0F, 0.0F, 1.0F, 0.9375F, 1.0F);
+            case 15 -> setBoundingBox(0.0F, 0.0F, 0.0F, 1.0F, 1.0F, 1.0F);
         }
 
     }
@@ -117,7 +85,7 @@ public class StaticBasalt extends TemplateBlockBase {
     }
 
     @Override
-    public void updateBoundingBox(TileView tileView, int x, int y, int z) {
+    public void updateBoundingBox(BlockView tileView, int x, int y, int z) {
         this.method_1060(tileView.getTileMeta(x, y, z));
     }
 

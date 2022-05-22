@@ -12,6 +12,8 @@ import net.modificationstation.stationapi.api.block.HasMetaNamedBlockItem;
 import net.modificationstation.stationapi.api.registry.Identifier;
 import net.modificationstation.stationapi.api.template.block.TemplateBlockBase;
 
+import java.util.Random;
+
 @HasMetaNamedBlockItem
 public class SuperSponge extends TemplateBlockBase {
 
