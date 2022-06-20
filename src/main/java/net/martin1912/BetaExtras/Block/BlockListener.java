@@ -30,7 +30,7 @@ public class BlockListener {
         glazedTerracotta = new GlazedTerracotta(of(modID,"GlazedTerracotta"), Material.STONE).setHardness(1.5F).setTranslationKey(modID,"glazed_terracotta");
         colouredThiccBriccs = new ColouredThiccBriccs(of(modID,"ColouredThiccBriccs"), Material.STONE).setHardness(1.5F).setTranslationKey(modID,"coloured_thicc_briccs");
         alphaBriccs = new AlphaBriccs(of(modID,"AlphaBriccs"), Material.STONE).setHardness(1.5F).setTranslationKey(modID,"alpha_briccs");
-        thiccFlesh = new ThiccFlesh(of(modID,"ThiccFlesh"), Material.DIRT).setHardness(0.5F).setTranslationKey(modID,"thicc_flesh");
+        thiccFlesh = new ThiccFlesh(of(modID,"ThiccFlesh"), Material.DIRT).setHardness(0.5F).setTranslationKey(modID,"thicc_flesh"); //Continue here with porting
         softBlock = new SoftBlock(of(modID,"SoftBlock"), Material.WOOL).setHardness(0.5F).setTranslationKey(modID,"soft_block");
         colouredPillows = new ColouredPillows(of(modID,"ColouredPillows"), Material.WOOL).setHardness(0.5F).setTranslationKey(modID,"coloured_pillows");
         alphiumOre = new AlphiumOre(of(modID,"AlphiumOre"), Material.STONE).setHardness(1.5F).setTranslationKey(modID,"alphium_ore");
@@ -50,7 +50,7 @@ public class BlockListener {
         dynamicBasalt = new DynamicBasalt(of(modID,"DynamicBasalt"), Material.STONE).setHardness(1.5F).setLightEmittance(0.2F).setTranslationKey(modID,"dynamic_basalt");
         staticBasalt = new StaticBasalt(of(modID,"StaticBasalt"), Material.STONE).setHardness(1.5F).setTranslationKey(modID,"static_basalt");
 
-        denseSnow = new DenseSnow(of(modID,"DenseSnow"), Material.SNOW).setHardness(0.75F).setTranslationKey(modID,"dense_snow");
+        denseSnow = new DenseSnow(of(modID,"DenseSnow"), Material.SNOW_BLOCK).setHardness(0.75F).setTranslationKey(modID,"dense_snow");
         denseIce = new DenseIce(of(modID,"DenseIce"), Material.STONE).setHardness(1.0F).setTranslationKey(modID,"dense_ice");
 
 

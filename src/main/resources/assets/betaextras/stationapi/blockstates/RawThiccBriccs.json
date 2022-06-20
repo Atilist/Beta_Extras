@@ -1,0 +1,25 @@
+{
+  "variants": {
+    "metasubstitute=0": {
+      "model": "betaextras:RawSmolBriccs"
+    },
+    "metasubstitute=1": {
+      "model": "betaextras:RawCutSupahThiccBricc"
+    },
+    "metasubstitute=2": {
+      "model": "betaextras:RawSupahThiccBricc"
+    },
+    "metasubstitute=3": {
+      "model": "betaextras:RawHypaThiccBriccTop"
+    },
+    "metasubstitute=4": {
+      "model": "betaextras:RawHypaThiccBriccMiddle"
+    },
+    "metasubstitute=5": {
+      "model": "betaextras:RawHypaThiccBriccBottom"
+    },
+    "metasubstitute=6": {
+      "model": "betaextras:RawHypaThiccBriccGlue"
+    }
+  }
+}

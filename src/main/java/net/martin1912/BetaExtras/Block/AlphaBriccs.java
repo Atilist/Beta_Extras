@@ -2,8 +2,14 @@ package net.martin1912.BetaExtras.Block;
 
 import net.minecraft.block.BlockBase;
 import net.minecraft.block.material.Material;
+import net.minecraft.entity.player.PlayerBase;
+import net.minecraft.level.Level;
+import net.modificationstation.stationapi.api.block.BlockState;
 import net.modificationstation.stationapi.api.block.HasMetaNamedBlockItem;
+import net.modificationstation.stationapi.api.level.BlockStateView;
 import net.modificationstation.stationapi.api.registry.Identifier;
+import net.modificationstation.stationapi.api.state.StateManager;
+import net.modificationstation.stationapi.api.state.property.IntProperty;
 import net.modificationstation.stationapi.api.template.block.TemplateBlockBase;
 
 @HasMetaNamedBlockItem
@@ -187,4 +193,21 @@ public class AlphaBriccs extends TemplateBlockBase {
             default:
                 return super.getTextureForSide(side, meta);}
     }
+
+    @Override
+    public boolean canUse(Level level, int x, int y, int z, PlayerBase player) {
+        if (((BlockStateView) level).getBlockState(x, y, z).get(AlphaBriccs.METASUBSTITUTE) < 13)
+            ((BlockStateView) level).setBlockState(x, y, z, BlockListener.alphaBriccs.getDefaultState().with(AlphaBriccs.METASUBSTITUTE, ((BlockStateView) level).getBlockState(x, y, z).get(AlphaBriccs.METASUBSTITUTE) + 1));
+        else
+            ((BlockStateView) level).setBlockState(x, y, z, BlockListener.alphaBriccs.getDefaultState().with(AlphaBriccs.METASUBSTITUTE, 0));
+        return true;
+    }
+
+    @Override
+    public void appendProperties(StateManager.Builder<BlockBase, BlockState> builder) {
+        super.appendProperties(builder);
+        builder.add(METASUBSTITUTE);
+    }
+
+    public static final IntProperty METASUBSTITUTE = IntProperty.of("metasubstitute", 0, 13);
 }

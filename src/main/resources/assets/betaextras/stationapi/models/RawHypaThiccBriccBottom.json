@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "particle": "betaextras:RawThiccBriccs/RawHypaThiccBriccMiddle",
+    "down": "betaextras:RawThiccBriccs/RawHypaThiccBriccBottomBottom",
+    "up": "betaextras:RawThiccBriccs/RawHypaThiccBriccMiddle",
+    "north": "betaextras:RawThiccBriccs/RawHypaThiccBriccBottom",
+    "east": "betaextras:RawThiccBriccs/RawHypaThiccBriccBottom",
+    "south": "betaextras:RawThiccBriccs/RawHypaThiccBriccBottom",
+    "west": "betaextras:RawThiccBriccs/RawHypaThiccBriccBottom"
+  }
+}

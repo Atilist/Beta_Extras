@@ -1,0 +1,52 @@
+{
+  "variants": {
+    "metasubstitute=0": {
+      "model": "betaextras:WhiteThiccBriccs"
+    },
+    "metasubstitute=1": {
+      "model": "betaextras:OrangeThiccBriccs"
+    },
+    "metasubstitute=2": {
+      "model": "betaextras:MagentaThiccBriccs"
+    },
+    "metasubstitute=3": {
+      "model": "betaextras:LightblueThiccBriccs"
+    },
+    "metasubstitute=4": {
+      "model": "betaextras:YellowThiccBriccs"
+    },
+    "metasubstitute=5": {
+      "model": "betaextras:LimeThiccBriccs"
+    },
+    "metasubstitute=6": {
+      "model": "betaextras:PinkThiccBriccs"
+    },
+    "metasubstitute=7": {
+      "model": "betaextras:GrayThiccBriccs"
+    },
+    "metasubstitute=8": {
+      "model": "betaextras:LightgrayThiccBriccs"
+    },
+    "metasubstitute=9": {
+      "model": "betaextras:CyanThiccBriccs"
+    },
+    "metasubstitute=10": {
+      "model": "betaextras:PurpleThiccBriccs"
+    },
+    "metasubstitute=11": {
+      "model": "betaextras:BlueThiccBriccs"
+    },
+    "metasubstitute=12": {
+      "model": "betaextras:BrownThiccBriccs"
+    },
+    "metasubstitute=13": {
+      "model": "betaextras:GreenThiccBriccs"
+    },
+    "metasubstitute=14": {
+      "model": "betaextras:RedThiccBriccs"
+    },
+    "metasubstitute=15": {
+      "model": "betaextras:BlackThiccBriccs"
+    }
+  }
+}

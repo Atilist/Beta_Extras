@@ -1,0 +1,52 @@
+{
+  "variants": {
+    "metasubstitute=0": {
+      "model": "betaextras:WhiteTerracotta"
+    },
+    "metasubstitute=1": {
+      "model": "betaextras:OrangeTerracotta"
+    },
+    "metasubstitute=2": {
+      "model": "betaextras:MagentaTerracotta"
+    },
+    "metasubstitute=3": {
+      "model": "betaextras:LightblueTerracotta"
+    },
+    "metasubstitute=4": {
+      "model": "betaextras:YellowTerracotta"
+    },
+    "metasubstitute=5": {
+      "model": "betaextras:LimeTerracotta"
+    },
+    "metasubstitute=6": {
+      "model": "betaextras:PinkTerracotta"
+    },
+    "metasubstitute=7": {
+      "model": "betaextras:GrayTerracotta"
+    },
+    "metasubstitute=8": {
+      "model": "betaextras:LightgrayTerracotta"
+    },
+    "metasubstitute=9": {
+      "model": "betaextras:CyanTerracotta"
+    },
+    "metasubstitute=10": {
+      "model": "betaextras:PurpleTerracotta"
+    },
+    "metasubstitute=11": {
+      "model": "betaextras:BlueTerracotta"
+    },
+    "metasubstitute=12": {
+      "model": "betaextras:BrownTerracotta"
+    },
+    "metasubstitute=13": {
+      "model": "betaextras:GreenTerracotta"
+    },
+    "metasubstitute=14": {
+      "model": "betaextras:RedTerracotta"
+    },
+    "metasubstitute=15": {
+      "model": "betaextras:BlackTerracotta"
+    }
+  }
+}

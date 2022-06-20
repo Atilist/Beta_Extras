@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "metasubstitute=0": {
+      "model": "betaextras:Terracotta"
+    },
+    "metasubstitute=1": {
+      "model": "betaextras:GlazedTerracotta"
+    },
+    "metasubstitute=2": {
+      "model": "betaextras:GlazedTerracottaEdge"
+    },
+    "metasubstitute=3": {
+      "model": "betaextras:GlazedTerracottaEdge0"
+    },
+    "metasubstitute=4": {
+      "model": "betaextras:GlazedTerracottaEdge1"
+    },
+    "metasubstitute=5": {
+      "model": "betaextras:GlazedTerracottaEdge2"
+    },
+    "metasubstitute=6": {
+      "model": "betaextras:GlazedTerracottaCorner"
+    },
+    "metasubstitute=7": {
+      "model": "betaextras:GlazedTerracottaCorner0"
+    },
+    "metasubstitute=8": {
+      "model": "betaextras:GlazedTerracottaCorner1"
+    },
+    "metasubstitute=9": {
+      "model": "betaextras:GlazedTerracottaCorner2"
+    }
+  }
+}

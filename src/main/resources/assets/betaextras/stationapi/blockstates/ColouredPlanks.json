@@ -1,0 +1,52 @@
+{
+  "variants": {
+    "metasubstitute=0": {
+      "model": "betaextras:WhitePlanks"
+    },
+    "metasubstitute=1": {
+      "model": "betaextras:OrangePlanks"
+    },
+    "metasubstitute=2": {
+      "model": "betaextras:MagentaPlanks"
+    },
+    "metasubstitute=3": {
+      "model": "betaextras:LightbluePlanks"
+    },
+    "metasubstitute=4": {
+      "model": "betaextras:YellowPlanks"
+    },
+    "metasubstitute=5": {
+      "model": "betaextras:LimePlanks"
+    },
+    "metasubstitute=6": {
+      "model": "betaextras:PinkPlanks"
+    },
+    "metasubstitute=7": {
+      "model": "betaextras:GrayPlanks"
+    },
+    "metasubstitute=8": {
+      "model": "betaextras:LightgrayPlanks"
+    },
+    "metasubstitute=9": {
+      "model": "betaextras:CyanPlanks"
+    },
+    "metasubstitute=10": {
+      "model": "betaextras:PurplePlanks"
+    },
+    "metasubstitute=11": {
+      "model": "betaextras:BluePlanks"
+    },
+    "metasubstitute=12": {
+      "model": "betaextras:BrownPlanks"
+    },
+    "metasubstitute=13": {
+      "model": "betaextras:GreenPlanks"
+    },
+    "metasubstitute=14": {
+      "model": "betaextras:RedPlanks"
+    },
+    "metasubstitute=15": {
+      "model": "betaextras:BlackPlanks"
+    }
+  }
+}
