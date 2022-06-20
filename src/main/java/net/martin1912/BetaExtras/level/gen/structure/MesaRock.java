@@ -68,7 +68,7 @@ public class MesaRock extends Structure {
                 if (gapornot > 0) {
                     for (int k = 0; k < -(i * i) / (height / 2) + -(j * j) / (height / 2) + height + rand.nextInt(height); k++) {
                         if (y + k - 10 + yoffset < 64) {
-                            level.placeBlockWithMetaData(x + i - xwidth / 2 + xoffset, y + k - 10 + yoffset, z + j - zwidth / 2 + zoffset, BlockListener.uncoloredTerracotta.id, 0);
+                            level.placeBlockWithMetaData(x + i - xwidth / 2 + xoffset, y + k - 10 + yoffset, z + j - zwidth / 2 + zoffset, BlockListener.uncolouredTerracotta.id, 0);
                         }
                         int yeetus = y + k - 10 + yoffset;
                         switch (yeetus) {
@@ -78,127 +78,127 @@ public class MesaRock extends Structure {
                             case 67:
                             case 68:
                             case 69:
-                                level.placeBlockWithMetaData(x + i - xwidth / 2 + xoffset, y + k - 10 + yoffset, z + j - zwidth / 2 + zoffset, BlockListener.uncoloredTerracotta.id, 0);
+                                level.placeBlockWithMetaData(x + i - xwidth / 2 + xoffset, y + k - 10 + yoffset, z + j - zwidth / 2 + zoffset, BlockListener.uncolouredTerracotta.id, 0);
                                 break;
                             case 70:
-                                level.placeBlockWithMetaData(x + i - xwidth / 2 + xoffset, y + k - 10 + yoffset, z + j - zwidth / 2 + zoffset, BlockListener.coloredTerracotta.id, 0);
+                                level.placeBlockWithMetaData(x + i - xwidth / 2 + xoffset, y + k - 10 + yoffset, z + j - zwidth / 2 + zoffset, BlockListener.colouredTerracotta.id, 0);
                                 break;
                             case 71:
-                                level.placeBlockWithMetaData(x + i - xwidth / 2 + xoffset, y + k - 10 + yoffset, z + j - zwidth / 2 + zoffset, BlockListener.coloredTerracotta.id, 14);
+                                level.placeBlockWithMetaData(x + i - xwidth / 2 + xoffset, y + k - 10 + yoffset, z + j - zwidth / 2 + zoffset, BlockListener.colouredTerracotta.id, 14);
                                 break;
                             case 72:
-                                level.placeBlockWithMetaData(x + i - xwidth / 2 + xoffset, y + k - 10 + yoffset, z + j - zwidth / 2 + zoffset, BlockListener.coloredTerracotta.id, 0);
+                                level.placeBlockWithMetaData(x + i - xwidth / 2 + xoffset, y + k - 10 + yoffset, z + j - zwidth / 2 + zoffset, BlockListener.colouredTerracotta.id, 0);
                                 break;
                             case 73:
-                                level.placeBlockWithMetaData(x + i - xwidth / 2 + xoffset, y + k - 10 + yoffset, z + j - zwidth / 2 + zoffset, BlockListener.coloredTerracotta.id, 1);
+                                level.placeBlockWithMetaData(x + i - xwidth / 2 + xoffset, y + k - 10 + yoffset, z + j - zwidth / 2 + zoffset, BlockListener.colouredTerracotta.id, 1);
                                 break;
                             case 74:
                             case 75:
-                                level.placeBlockWithMetaData(x + i - xwidth / 2 + xoffset, y + k - 10 + yoffset, z + j - zwidth / 2 + zoffset, BlockListener.uncoloredTerracotta.id, 0);
+                                level.placeBlockWithMetaData(x + i - xwidth / 2 + xoffset, y + k - 10 + yoffset, z + j - zwidth / 2 + zoffset, BlockListener.uncolouredTerracotta.id, 0);
                                 break;
                             case 76:
-                                level.placeBlockWithMetaData(x + i - xwidth / 2 + xoffset, y + k - 10 + yoffset, z + j - zwidth / 2 + zoffset, BlockListener.coloredTerracotta.id, 2);
+                                level.placeBlockWithMetaData(x + i - xwidth / 2 + xoffset, y + k - 10 + yoffset, z + j - zwidth / 2 + zoffset, BlockListener.colouredTerracotta.id, 2);
                                 break;
                             case 77:
-                                level.placeBlockWithMetaData(x + i - xwidth / 2 + xoffset, y + k - 10 + yoffset, z + j - zwidth / 2 + zoffset, BlockListener.uncoloredTerracotta.id, 0);
+                                level.placeBlockWithMetaData(x + i - xwidth / 2 + xoffset, y + k - 10 + yoffset, z + j - zwidth / 2 + zoffset, BlockListener.uncolouredTerracotta.id, 0);
                                 break;
                             case 78:
-                                level.placeBlockWithMetaData(x + i - xwidth / 2 + xoffset, y + k - 10 + yoffset, z + j - zwidth / 2 + zoffset, BlockListener.coloredTerracotta.id, 1);
+                                level.placeBlockWithMetaData(x + i - xwidth / 2 + xoffset, y + k - 10 + yoffset, z + j - zwidth / 2 + zoffset, BlockListener.colouredTerracotta.id, 1);
                                 break;
                             case 79:
                             case 80:
                             case 81:
-                                level.placeBlockWithMetaData(x + i - xwidth / 2 + xoffset, y + k - 10 + yoffset, z + j - zwidth / 2 + zoffset, BlockListener.uncoloredTerracotta.id, 0);
+                                level.placeBlockWithMetaData(x + i - xwidth / 2 + xoffset, y + k - 10 + yoffset, z + j - zwidth / 2 + zoffset, BlockListener.uncolouredTerracotta.id, 0);
                                 break;
                             case 82:
-                                level.placeBlockWithMetaData(x + i - xwidth / 2 + xoffset, y + k - 10 + yoffset, z + j - zwidth / 2 + zoffset, BlockListener.coloredTerracotta.id, 2);
+                                level.placeBlockWithMetaData(x + i - xwidth / 2 + xoffset, y + k - 10 + yoffset, z + j - zwidth / 2 + zoffset, BlockListener.colouredTerracotta.id, 2);
                                 break;
                             case 83:
-                                level.placeBlockWithMetaData(x + i - xwidth / 2 + xoffset, y + k - 10 + yoffset, z + j - zwidth / 2 + zoffset, BlockListener.coloredTerracotta.id, 12);
+                                level.placeBlockWithMetaData(x + i - xwidth / 2 + xoffset, y + k - 10 + yoffset, z + j - zwidth / 2 + zoffset, BlockListener.colouredTerracotta.id, 12);
                                 break;
                             case 84:
                             case 85:
                             case 86:
                             case 87:
-                                level.placeBlockWithMetaData(x + i - xwidth / 2 + xoffset, y + k - 10 + yoffset, z + j - zwidth / 2 + zoffset, BlockListener.uncoloredTerracotta.id, 0);
+                                level.placeBlockWithMetaData(x + i - xwidth / 2 + xoffset, y + k - 10 + yoffset, z + j - zwidth / 2 + zoffset, BlockListener.uncolouredTerracotta.id, 0);
                                 break;
                             case 88:
-                                level.placeBlockWithMetaData(x + i - xwidth / 2 + xoffset, y + k - 10 + yoffset, z + j - zwidth / 2 + zoffset, BlockListener.coloredTerracotta.id, 7);
+                                level.placeBlockWithMetaData(x + i - xwidth / 2 + xoffset, y + k - 10 + yoffset, z + j - zwidth / 2 + zoffset, BlockListener.colouredTerracotta.id, 7);
                                 break;
                             case 89:
                             case 90:
-                                level.placeBlockWithMetaData(x + i - xwidth / 2 + xoffset, y + k - 10 + yoffset, z + j - zwidth / 2 + zoffset, BlockListener.coloredTerracotta.id, 4);
+                                level.placeBlockWithMetaData(x + i - xwidth / 2 + xoffset, y + k - 10 + yoffset, z + j - zwidth / 2 + zoffset, BlockListener.colouredTerracotta.id, 4);
                                 break;
                             case 91:
-                                level.placeBlockWithMetaData(x + i - xwidth / 2 + xoffset, y + k - 10 + yoffset, z + j - zwidth / 2 + zoffset, BlockListener.coloredTerracotta.id, 7);
+                                level.placeBlockWithMetaData(x + i - xwidth / 2 + xoffset, y + k - 10 + yoffset, z + j - zwidth / 2 + zoffset, BlockListener.colouredTerracotta.id, 7);
                                 break;
                             case 92:
                             case 93:
                             case 94:
                             case 95:
                             case 96:
-                                level.placeBlockWithMetaData(x + i - xwidth / 2 + xoffset, y + k - 10 + yoffset, z + j - zwidth / 2 + zoffset, BlockListener.uncoloredTerracotta.id, 0);
+                                level.placeBlockWithMetaData(x + i - xwidth / 2 + xoffset, y + k - 10 + yoffset, z + j - zwidth / 2 + zoffset, BlockListener.uncolouredTerracotta.id, 0);
                                 break;
                             case 97:
                             case 98:
-                                level.placeBlockWithMetaData(x + i - xwidth / 2 + xoffset, y + k - 10 + yoffset, z + j - zwidth / 2 + zoffset, BlockListener.coloredTerracotta.id, 1);
+                                level.placeBlockWithMetaData(x + i - xwidth / 2 + xoffset, y + k - 10 + yoffset, z + j - zwidth / 2 + zoffset, BlockListener.colouredTerracotta.id, 1);
                                 break;
                             case 99:
                             case 100:
                             case 101:
                             case 102:
                             case 103:
-                                level.placeBlockWithMetaData(x + i - xwidth / 2 + xoffset, y + k - 10 + yoffset, z + j - zwidth / 2 + zoffset, BlockListener.uncoloredTerracotta.id, 0);
+                                level.placeBlockWithMetaData(x + i - xwidth / 2 + xoffset, y + k - 10 + yoffset, z + j - zwidth / 2 + zoffset, BlockListener.uncolouredTerracotta.id, 0);
                                 break;
                             case 104:
-                                level.placeBlockWithMetaData(x + i - xwidth / 2 + xoffset, y + k - 10 + yoffset, z + j - zwidth / 2 + zoffset, BlockListener.coloredTerracotta.id, 12);
+                                level.placeBlockWithMetaData(x + i - xwidth / 2 + xoffset, y + k - 10 + yoffset, z + j - zwidth / 2 + zoffset, BlockListener.colouredTerracotta.id, 12);
                                 break;
                             case 105:
                             case 106:
                             case 107:
-                                level.placeBlockWithMetaData(x + i - xwidth / 2 + xoffset, y + k - 10 + yoffset, z + j - zwidth / 2 + zoffset, BlockListener.uncoloredTerracotta.id, 0);
+                                level.placeBlockWithMetaData(x + i - xwidth / 2 + xoffset, y + k - 10 + yoffset, z + j - zwidth / 2 + zoffset, BlockListener.uncolouredTerracotta.id, 0);
                                 break;
                             case 108:
-                                level.placeBlockWithMetaData(x + i - xwidth / 2 + xoffset, y + k - 10 + yoffset, z + j - zwidth / 2 + zoffset, BlockListener.coloredTerracotta.id, 4);
+                                level.placeBlockWithMetaData(x + i - xwidth / 2 + xoffset, y + k - 10 + yoffset, z + j - zwidth / 2 + zoffset, BlockListener.colouredTerracotta.id, 4);
                                 break;
                             case 109:
                             case 110:
                             case 111:
-                                level.placeBlockWithMetaData(x + i - xwidth / 2 + xoffset, y + k - 10 + yoffset, z + j - zwidth / 2 + zoffset, BlockListener.uncoloredTerracotta.id, 0);
+                                level.placeBlockWithMetaData(x + i - xwidth / 2 + xoffset, y + k - 10 + yoffset, z + j - zwidth / 2 + zoffset, BlockListener.uncolouredTerracotta.id, 0);
                                 break;
                             case 112:
-                                level.placeBlockWithMetaData(x + i - xwidth / 2 + xoffset, y + k - 10 + yoffset, z + j - zwidth / 2 + zoffset, BlockListener.coloredTerracotta.id, 0);
+                                level.placeBlockWithMetaData(x + i - xwidth / 2 + xoffset, y + k - 10 + yoffset, z + j - zwidth / 2 + zoffset, BlockListener.colouredTerracotta.id, 0);
                                 break;
                             case 113:
                             case 114:
                             case 115:
-                                level.placeBlockWithMetaData(x + i - xwidth / 2 + xoffset, y + k - 10 + yoffset, z + j - zwidth / 2 + zoffset, BlockListener.uncoloredTerracotta.id, 0);
+                                level.placeBlockWithMetaData(x + i - xwidth / 2 + xoffset, y + k - 10 + yoffset, z + j - zwidth / 2 + zoffset, BlockListener.uncolouredTerracotta.id, 0);
                                 break;
                             case 116:
-                                level.placeBlockWithMetaData(x + i - xwidth / 2 + xoffset, y + k - 10 + yoffset, z + j - zwidth / 2 + zoffset, BlockListener.coloredTerracotta.id, 4);
+                                level.placeBlockWithMetaData(x + i - xwidth / 2 + xoffset, y + k - 10 + yoffset, z + j - zwidth / 2 + zoffset, BlockListener.colouredTerracotta.id, 4);
                                 break;
                             case 117:
                             case 118:
-                                level.placeBlockWithMetaData(x + i - xwidth / 2 + xoffset, y + k - 10 + yoffset, z + j - zwidth / 2 + zoffset, BlockListener.uncoloredTerracotta.id, 0);
+                                level.placeBlockWithMetaData(x + i - xwidth / 2 + xoffset, y + k - 10 + yoffset, z + j - zwidth / 2 + zoffset, BlockListener.uncolouredTerracotta.id, 0);
                                 break;
                             case 119:
-                                level.placeBlockWithMetaData(x + i - xwidth / 2 + xoffset, y + k - 10 + yoffset, z + j - zwidth / 2 + zoffset, BlockListener.coloredTerracotta.id, 14);
+                                level.placeBlockWithMetaData(x + i - xwidth / 2 + xoffset, y + k - 10 + yoffset, z + j - zwidth / 2 + zoffset, BlockListener.colouredTerracotta.id, 14);
                                 break;
                             case 120:
                             case 121:
-                                level.placeBlockWithMetaData(x + i - xwidth / 2 + xoffset, y + k - 10 + yoffset, z + j - zwidth / 2 + zoffset, BlockListener.uncoloredTerracotta.id, 0);
+                                level.placeBlockWithMetaData(x + i - xwidth / 2 + xoffset, y + k - 10 + yoffset, z + j - zwidth / 2 + zoffset, BlockListener.uncolouredTerracotta.id, 0);
                                 break;
                             case 122:
-                                level.placeBlockWithMetaData(x + i - xwidth / 2 + xoffset, y + k - 10 + yoffset, z + j - zwidth / 2 + zoffset, BlockListener.coloredTerracotta.id, 4);
+                                level.placeBlockWithMetaData(x + i - xwidth / 2 + xoffset, y + k - 10 + yoffset, z + j - zwidth / 2 + zoffset, BlockListener.colouredTerracotta.id, 4);
                                 break;
                             case 123:
                             case 124:
                             case 125:
                             case 126:
-                                level.placeBlockWithMetaData(x + i - xwidth / 2 + xoffset, y + k - 10 + yoffset, z + j - zwidth / 2 + zoffset, BlockListener.uncoloredTerracotta.id, 0);
+                                level.placeBlockWithMetaData(x + i - xwidth / 2 + xoffset, y + k - 10 + yoffset, z + j - zwidth / 2 + zoffset, BlockListener.uncolouredTerracotta.id, 0);
                                 break;
                             case 127:
-                                level.placeBlockWithMetaData(x + i - xwidth / 2 + xoffset, y + k - 10 + yoffset, z + j - zwidth / 2 + zoffset, BlockListener.coloredTerracotta.id, 11);
+                                level.placeBlockWithMetaData(x + i - xwidth / 2 + xoffset, y + k - 10 + yoffset, z + j - zwidth / 2 + zoffset, BlockListener.colouredTerracotta.id, 11);
                                 break;
                         }
                     }

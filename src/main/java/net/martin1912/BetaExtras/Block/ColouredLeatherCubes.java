@@ -1,7 +1,6 @@
 package net.martin1912.BetaExtras.Block;
 
 
-import net.minecraft.block.BlockBase;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.EntityBase;
 import net.minecraft.level.Level;
@@ -11,16 +10,16 @@ import net.modificationstation.stationapi.api.registry.Identifier;
 import net.modificationstation.stationapi.api.template.block.TemplateBlockBase;
 
 @HasMetaNamedBlockItem
-public class ColoredLeatherCubes extends TemplateBlockBase {
+public class ColouredLeatherCubes extends TemplateBlockBase {
 
-    public ColoredLeatherCubes(Identifier identifier, Material material) {
+    public ColouredLeatherCubes(Identifier identifier, Material material) {
         super(identifier, material);
         setSounds(WOOL.sounds);
     }
 
     @Override
-    public ColoredLeatherCubes setHardness(float Hardness) {
-        return (ColoredLeatherCubes) super.setHardness(Hardness);
+    public ColouredLeatherCubes setHardness(float Hardness) {
+        return (ColouredLeatherCubes) super.setHardness(Hardness);
     }
 
     @Override

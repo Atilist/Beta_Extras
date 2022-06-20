@@ -1,21 +1,20 @@
 package net.martin1912.BetaExtras.Block;
 
-import net.minecraft.block.BlockBase;
 import net.minecraft.block.material.Material;
 import net.modificationstation.stationapi.api.block.HasMetaNamedBlockItem;
 import net.modificationstation.stationapi.api.registry.Identifier;
 import net.modificationstation.stationapi.api.template.block.TemplateBlockBase;
 
 @HasMetaNamedBlockItem
-public class ColoredThiccBriccs extends TemplateBlockBase {
+public class ColouredThiccBriccs extends TemplateBlockBase {
 
-    public ColoredThiccBriccs(Identifier identifier, Material material) {
+    public ColouredThiccBriccs(Identifier identifier, Material material) {
         super(identifier, material);
     }
 
     @Override
-    public ColoredThiccBriccs setHardness(float Hardness) {
-        return (ColoredThiccBriccs) super.setHardness(Hardness);
+    public ColouredThiccBriccs setHardness(float Hardness) {
+        return (ColouredThiccBriccs) super.setHardness(Hardness);
     }
 
     @Override

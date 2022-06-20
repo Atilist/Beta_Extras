@@ -1,11 +1,15 @@
 package net.martin1912.BetaExtras.Item;
 
+import net.martin1912.BetaExtras.Block.BigBrownMushroom;
+import net.martin1912.BetaExtras.Block.BigRedMushroom;
 import net.martin1912.BetaExtras.Block.BlockListener;
 import net.minecraft.block.BlockBase;
+import net.minecraft.client.level.ClientLevel;
 import net.minecraft.entity.player.PlayerBase;
 import net.minecraft.item.ItemBase;
 import net.minecraft.item.ItemInstance;
 import net.minecraft.level.Level;
+import net.modificationstation.stationapi.api.level.BlockStateView;
 import net.modificationstation.stationapi.api.registry.Identifier;
 import net.modificationstation.stationapi.api.template.item.TemplateItemBase;
 
@@ -18,40 +22,43 @@ public class MushroomFertilizer extends TemplateItemBase {
 
     @Override
     public boolean useOnTile(ItemInstance item, PlayerBase player, Level level, int x, int y, int z, int facing) {
-        int var8 = level.getTileId(x, y, z);
-        int var9 = level.getTileMeta(x, y, z);
-        if (var8 == BlockListener.bigRedMushroom.id) {
-            switch (var9) {
-                case 0:
+        int idCheck = level.getTileId(x, y, z);
+        if (idCheck == BlockListener.bigRedMushroom.id) {
+            switch (((BlockStateView) level).getBlockState(x, y, z).get(BigRedMushroom.SIZE)) {
+                case 0 -> {
                     --item.count;
-                    level.placeBlockWithMetaData(x, y, z, BlockListener.bigRedMushroom.id, 1);
+                    ((BlockStateView) level).setBlockState(x, y, z, BlockListener.bigRedMushroom.getDefaultState().with(BigBrownMushroom.SIZE, 1));
                     return true;
-                case 1:
+                }
+                case 1 -> {
                     --item.count;
-                    level.placeBlockWithMetaData(x, y, z, BlockListener.bigRedMushroom.id, 2);
+                    ((BlockStateView) level).setBlockState(x, y, z, BlockListener.bigRedMushroom.getDefaultState().with(BigBrownMushroom.SIZE, 2));
                     return true;
+                }
             }
         }
-        if (var8 == BlockListener.bigBrownMushroom.id) {
-            switch (var9) {
-                case 0:
+        if (idCheck == BlockListener.bigBrownMushroom.id) {
+            switch (((BlockStateView) level).getBlockState(x, y, z).get(BigBrownMushroom.SIZE)) {
+                case 0 -> {
                     --item.count;
-                    level.placeBlockWithMetaData(x, y, z, BlockListener.bigBrownMushroom.id, 1);
+                    ((BlockStateView) level).setBlockState(x, y, z, BlockListener.bigBrownMushroom.getDefaultState().with(BigBrownMushroom.SIZE, 1));
                     return true;
-                case 1:
+                }
+                case 1 -> {
                     --item.count;
-                    level.placeBlockWithMetaData(x, y, z, BlockListener.bigBrownMushroom.id, 2);
+                    ((BlockStateView) level).setBlockState(x, y, z, BlockListener.bigBrownMushroom.getDefaultState().with(BigBrownMushroom.SIZE, 2));
                     return true;
+                }
             }
         }
-        if (var8 == BlockBase.BROWN_MUSHROOM.id) {
+        if (idCheck == BlockBase.BROWN_MUSHROOM.id) {
             --item.count;
-            level.placeBlockWithMetaData(x, y, z, BlockListener.bigBrownMushroom.id, 0);
+            level.setTile(x, y, z, BlockListener.bigBrownMushroom.id);
             return true;
         }
-        if (var8 == BlockBase.RED_MUSHROOM.id) {
+        if (idCheck == BlockBase.RED_MUSHROOM.id) {
             --item.count;
-            level.placeBlockWithMetaData(x, y, z, BlockListener.bigRedMushroom.id, 0);
+            level.setTile(x, y, z, BlockListener.bigRedMushroom.id);
             return true;
         }
         return false;

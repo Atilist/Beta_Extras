@@ -1,0 +1,52 @@
+{
+  "variants": {
+    "metasubstitute=0": {
+      "model": "betaextras:ThiccBriccs"
+    },
+    "metasubstitute=1": {
+      "model": "betaextras:CutSupahThiccBricc"
+    },
+    "metasubstitute=2": {
+      "model": "betaextras:SupahThiccBricc"
+    },
+    "metasubstitute=3": {
+      "model": "betaextras:SmolBriccs"
+    },
+    "metasubstitute=4": {
+      "model": "betaextras:ThinnBriccs"
+    },
+    "metasubstitute=5": {
+      "model": "betaextras:HalfThiccBriccOne"
+    },
+    "metasubstitute=6": {
+      "model": "betaextras:HalfThiccBriccTwo"
+    },
+    "metasubstitute=7": {
+      "model": "betaextras:HalfSupahThiccBriccOne"
+    },
+    "metasubstitute=8": {
+      "model": "betaextras:HalfSupahThiccBriccTwo"
+    },
+    "metasubstitute=9": {
+      "model": "betaextras:HalfThiccBriccThree"
+    },
+    "metasubstitute=10": {
+      "model": "betaextras:HalfThiccBriccFour"
+    },
+    "metasubstitute=11": {
+      "model": "betaextras:HalfSupahThiccBriccThree"
+    },
+    "metasubstitute=12": {
+      "model": "betaextras:HalfSupahThiccBriccFour"
+    },
+    "metasubstitute=13": {
+      "model": "betaextras:CursedBricks"
+    },
+    "metasubstitute=14": {
+      "model": "betaextras:SuperCursedBricks"
+    },
+    "metasubstitute=15": {
+      "model": "betaextras:HyperCursedBricks"
+    }
+  }
+}

@@ -1,21 +1,20 @@
 package net.martin1912.BetaExtras.Block;
 
-import net.minecraft.block.BlockBase;
 import net.minecraft.block.material.Material;
 import net.modificationstation.stationapi.api.block.HasMetaNamedBlockItem;
 import net.modificationstation.stationapi.api.registry.Identifier;
 import net.modificationstation.stationapi.api.template.block.TemplateBlockBase;
 
 @HasMetaNamedBlockItem
-public class UncoloredTerracotta extends TemplateBlockBase {
+public class UncolouredTerracotta extends TemplateBlockBase {
 
-    public UncoloredTerracotta(Identifier identifier, Material material) {
+    public UncolouredTerracotta(Identifier identifier, Material material) {
         super(identifier, material);
     }
 
     @Override
-    public UncoloredTerracotta setHardness(float Hardness) {
-        return (UncoloredTerracotta) super.setHardness(Hardness);
+    public UncolouredTerracotta setHardness(float Hardness) {
+        return (UncolouredTerracotta) super.setHardness(Hardness);
     }
 
     @Override

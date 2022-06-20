@@ -1,11 +1,9 @@
 package net.martin1912.BetaExtras.Item;
 
 import net.mine_diver.unsafeevents.listener.EventListener;
-import net.minecraft.item.ItemBase;
 
 import net.modificationstation.stationapi.api.event.registry.ItemRegistryEvent;
 import net.modificationstation.stationapi.api.mod.entrypoint.Entrypoint;
-import net.modificationstation.stationapi.api.registry.Identifier;
 import net.modificationstation.stationapi.api.registry.ModID;
 import net.modificationstation.stationapi.api.template.item.TemplateItemBase;
 
@@ -20,7 +18,7 @@ public class ItemListener {
         rawThiccBricc = new RawThiccBricc(of(modID, "RawThiccBricc")).setTranslationKey(modID, "raw_thicc_bricc");
         thiccBricc = new ThiccBricc(of(modID, "ThiccBricc")).setTranslationKey(modID, "thicc_bricc");
         alphium = new Alphium(of(modID, "Alphium")).setTranslationKey(modID, "alphium");
-        colorRemover = new ColorRemover(of(modID, "ColorRemover")).setTranslationKey(modID, "color_remover");
+        dyeRemover = new DyeRemover(of(modID, "DyeRemover")).setTranslationKey(modID, "dye_remover");
         rotator = new Rotator(of(modID, "Rotator")).setTranslationKey(modID, "rotator");
         mushroomFertilizer = new MushroomFertilizer(of(modID, "MushroomFertilizer")).setTranslationKey(modID, "mushroom_fertilizer");
         cursedEssence = new CursedEssence(of(modID, "CursedEssence")).setTranslationKey(modID, "cursed_essence");
@@ -33,7 +31,7 @@ public class ItemListener {
             rawThiccBricc,
             thiccBricc,
             alphium,
-            colorRemover,
+            dyeRemover,
             rotator,
             mushroomFertilizer,
             pureAlphium,

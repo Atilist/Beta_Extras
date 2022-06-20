@@ -6,12 +6,10 @@ import net.minecraft.block.BlockBase;
 import net.minecraft.block.material.Material;
 import net.modificationstation.stationapi.api.event.registry.BlockRegistryEvent;
 import net.modificationstation.stationapi.api.mod.entrypoint.Entrypoint;
-import net.modificationstation.stationapi.api.registry.Identifier;
 import net.modificationstation.stationapi.api.registry.ModID;
 import net.modificationstation.stationapi.api.template.block.TemplateBlockBase;
 import net.modificationstation.stationapi.api.template.block.TemplateMushroom;
 import net.modificationstation.stationapi.api.template.block.TemplateSapling;
-import net.modificationstation.stationapi.api.template.block.*;
 
 import java.util.HashMap;
 
@@ -24,20 +22,20 @@ public class BlockListener {
     @EventListener
     public void registerBlocks(BlockRegistryEvent event) {
         thiccBriccs = new ThiccBriccs(of(modID,"ThiccBriccs"), Material.STONE).setHardness(1.5F).setTranslationKey(modID,"thicc_briccs");
-        coloredBricks = new ColoredBricks(of(modID,"ColoredBricks"), Material.STONE).setHardness(1.5F).setTranslationKey(modID,"colored_bricks");
+        colouredBricks = new ColouredBricks(of(modID,"ColouredBricks"), Material.STONE).setHardness(1.5F).setTranslationKey(modID,"coloured_bricks");
         rawThiccBriccs = new RawThiccBriccs(of(modID,"RawThiccBriccs"), Material.CLAY).setHardness(0.5F).setTranslationKey(modID,"raw_thicc_briccs");
-        coloredPlanks = new ColoredPlanks(of(modID,"ColoredPlanks"), Material.WOOD).setHardness(1.5F).setTranslationKey(modID,"colored_planks");
-        coloredTerracotta = new ColoredTerracotta(of(modID,"ColoredTerracotta"), Material.STONE).setHardness(1.5F).setTranslationKey(modID,"colored_terracotta");
-        uncoloredTerracotta = new UncoloredTerracotta(of(modID,"UncoloredTerracotta"), Material.STONE).setHardness(1.5F).setTranslationKey(modID,"uncolored_terracotta");
+        colouredPlanks = new ColouredPlanks(of(modID,"ColouredPlanks"), Material.WOOD).setHardness(1.5F).setTranslationKey(modID,"coloured_planks");
+        colouredTerracotta = new ColouredTerracotta(of(modID,"ColouredTerracotta"), Material.STONE).setHardness(1.5F).setTranslationKey(modID,"coloured_terracotta");
+        uncolouredTerracotta = new UncolouredTerracotta(of(modID,"UncolouredTerracotta"), Material.STONE).setHardness(1.5F).setTranslationKey(modID,"uncoloured_terracotta");
         glazedTerracotta = new GlazedTerracotta(of(modID,"GlazedTerracotta"), Material.STONE).setHardness(1.5F).setTranslationKey(modID,"glazed_terracotta");
-        coloredThiccBriccs = new ColoredThiccBriccs(of(modID,"ColoredThiccBriccs"), Material.STONE).setHardness(1.5F).setTranslationKey(modID,"colored_thicc_briccs");
+        colouredThiccBriccs = new ColouredThiccBriccs(of(modID,"ColouredThiccBriccs"), Material.STONE).setHardness(1.5F).setTranslationKey(modID,"coloured_thicc_briccs");
         alphaBriccs = new AlphaBriccs(of(modID,"AlphaBriccs"), Material.STONE).setHardness(1.5F).setTranslationKey(modID,"alpha_briccs");
         thiccFlesh = new ThiccFlesh(of(modID,"ThiccFlesh"), Material.DIRT).setHardness(0.5F).setTranslationKey(modID,"thicc_flesh");
         softBlock = new SoftBlock(of(modID,"SoftBlock"), Material.WOOL).setHardness(0.5F).setTranslationKey(modID,"soft_block");
-        coloredPillows = new ColoredPillows(of(modID,"ColoredPillows"), Material.WOOL).setHardness(0.5F).setTranslationKey(modID,"colored_pillows");
+        colouredPillows = new ColouredPillows(of(modID,"ColouredPillows"), Material.WOOL).setHardness(0.5F).setTranslationKey(modID,"coloured_pillows");
         alphiumOre = new AlphiumOre(of(modID,"AlphiumOre"), Material.STONE).setHardness(1.5F).setTranslationKey(modID,"alphium_ore");
-        coloredLoomedBlocks = new ColoredLoomedBlocks(of(modID,"ColoredLoomedBlocks"), Material.WOOL).setHardness(0.5F).setTranslationKey(modID,"colored_loomed_blocks");
-        coloredLeatherCubes = new ColoredLeatherCubes(of(modID,"ColoredLeatherCubes"), Material.WOOL).setHardness(0.5F).setTranslationKey(modID,"colored_leather_cubes");
+        colouredLoomedBlocks = new ColouredLoomedBlocks(of(modID,"ColouredLoomedBlocks"), Material.WOOL).setHardness(0.5F).setTranslationKey(modID,"coloured_loomed_blocks");
+        colouredLeatherCubes = new ColouredLeatherCubes(of(modID,"ColouredLeatherCubes"), Material.WOOL).setHardness(0.5F).setTranslationKey(modID,"coloured_leather_cubes");
         bigBrownMushroom = new BigBrownMushroom(of(modID,"BigBrownMushroom")).setHardness(0.1F).setTranslationKey(modID,"big_brown_mushroom");
         bigRedMushroom = new BigRedMushroom(of(modID,"BigRedMushroom")).setHardness(0.1F).setTranslationKey(modID,"big_red_mushroom");
         extraLogs = new ExtraLogs(of(modID,"ExtraLogs"), Material.WOOD).setHardness(1.5F).setTranslationKey(modID,"extra_logs");
@@ -56,32 +54,32 @@ public class BlockListener {
         denseIce = new DenseIce(of(modID,"DenseIce"), Material.STONE).setHardness(1.0F).setTranslationKey(modID,"dense_ice");
 
 
-        coloredToNonColored.put(coloredThiccBriccs.id, new int[]{thiccBriccs.id, 0});
-        coloredToNonColored.put(coloredTerracotta.id, new int[]{uncoloredTerracotta.id, 0});
-        coloredToNonColored.put(coloredPlanks.id, new int[]{BlockBase.WOOD.id, 0});
-        coloredToNonColored.put(coloredBricks.id, new int[]{BlockBase.BRICKS.id, 0});
-        coloredToNonColored.put(coloredPillows.id, new int[]{softBlock.id, 0});
-        coloredToNonColored.put(coloredLoomedBlocks.id, new int[]{softBlock.id, 1});
-        coloredToNonColored.put(coloredLeatherCubes.id, new int[]{softBlock.id, 2});
-        coloredToNonColored.put(BlockBase.WOOL.id, new int[]{BlockBase.WOOL.id, 0});
+        colouredToNonColoured.put(colouredThiccBriccs.id, new int[]{thiccBriccs.id, 0});
+        colouredToNonColoured.put(colouredTerracotta.id, new int[]{uncolouredTerracotta.id, 0});
+        colouredToNonColoured.put(colouredPlanks.id, new int[]{BlockBase.WOOD.id, 0});
+        colouredToNonColoured.put(colouredBricks.id, new int[]{BlockBase.BRICKS.id, 0});
+        colouredToNonColoured.put(colouredPillows.id, new int[]{softBlock.id, 0});
+        colouredToNonColoured.put(colouredLoomedBlocks.id, new int[]{softBlock.id, 1});
+        colouredToNonColoured.put(colouredLeatherCubes.id, new int[]{softBlock.id, 2});
+        colouredToNonColoured.put(BlockBase.WOOL.id, new int[]{BlockBase.WOOL.id, 0});
     }
 
     public static TemplateBlockBase
             thiccBriccs,
-            coloredBricks,
+            colouredBricks,
             rawThiccBriccs,
-            coloredPlanks,
-            coloredTerracotta,
-            uncoloredTerracotta,
+            colouredPlanks,
+            colouredTerracotta,
+            uncolouredTerracotta,
             glazedTerracotta,
-            coloredThiccBriccs,
+            colouredThiccBriccs,
             alphaBriccs,
             thiccFlesh,
             softBlock,
-            coloredPillows,
+            colouredPillows,
             alphiumOre,
-            coloredLoomedBlocks,
-            coloredLeatherCubes,
+            colouredLoomedBlocks,
+            colouredLeatherCubes,
             extraLogs,
             extraLeaves,
             superSponge,
@@ -103,6 +101,6 @@ public class BlockListener {
     public static TemplateSapling
             extraSaplings;
 
-    public static HashMap<Integer, int[]> coloredToNonColored = new HashMap<>();
+    public static HashMap<Integer, int[]> colouredToNonColoured = new HashMap<>();
 }
 

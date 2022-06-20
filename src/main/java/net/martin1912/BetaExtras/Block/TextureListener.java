@@ -24,7 +24,7 @@ public class TextureListener {
         ItemListener.rawThiccBricc.setTexture(of(modID, "Items/RawThiccBricc"));
         ItemListener.thiccBricc.setTexture(of(modID, "Items/ThiccBricc"));
         ItemListener.alphium.setTexture(of(modID, "Items/Alphium"));
-        ItemListener.colorRemover.setTexture(of(modID, "Items/ColorRemover"));
+        ItemListener.dyeRemover.setTexture(of(modID, "Items/ColorRemover"));
         ItemListener.rotator.setTexture(of(modID, "Items/Rotator"));
         ItemListener.mushroomFertilizer.setTexture(of(modID, "Items/MushroomFertilizer"));
         ItemListener.cursedEssence.setTexture(of(modID, "CursedThings/CursedEssence"));

@@ -1,6 +1,5 @@
 package net.martin1912.BetaExtras.Block;
 
-import net.minecraft.block.BlockBase;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.EntityBase;
 import net.minecraft.level.Level;
@@ -10,16 +9,16 @@ import net.modificationstation.stationapi.api.registry.Identifier;
 import net.modificationstation.stationapi.api.template.block.TemplateBlockBase;
 
 @HasMetaNamedBlockItem
-public class ColoredPillows extends TemplateBlockBase {
+public class ColouredPillows extends TemplateBlockBase {
 
-    public ColoredPillows(Identifier identifier, Material material) {
+    public ColouredPillows(Identifier identifier, Material material) {
         super(identifier, material);
         setSounds(WOOL.sounds);
     }
 
     @Override
-    public ColoredPillows setHardness(float Hardness) {
-        return (ColoredPillows) super.setHardness(Hardness);
+    public ColouredPillows setHardness(float Hardness) {
+        return (ColouredPillows) super.setHardness(Hardness);
     }
 
     @Override

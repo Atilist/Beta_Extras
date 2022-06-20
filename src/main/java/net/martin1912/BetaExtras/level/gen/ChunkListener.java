@@ -86,8 +86,11 @@ public class ChunkListener {
             if (event.random.nextInt(32) == 0) {
                 new FlatCave().generate(event.level, event.random, event.x + event.random.nextInt(16), 30, event.z + event.random.nextInt(16));
             }
-            if (event.random.nextInt(128) == 0) {
-                new SpikeRavine().generate(event.level, event.random, event.x + event.random.nextInt(16), 20 + event.random.nextInt(60), event.z + event.random.nextInt(16));
+            if (event.random.nextInt(32) == 0) {
+                new SpikeRavine().generate(event.level, event.random, event.x + event.random.nextInt(16), 20 + event.random.nextInt(70), event.z + event.random.nextInt(16));
+            }
+            if (event.random.nextInt(8) == 0) {
+                new ClusterCave().generate(event.level, event.random, event.x + event.random.nextInt(16), 10 + event.random.nextInt(100), event.z + event.random.nextInt(16));
             }
         }
     }

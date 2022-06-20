@@ -1,12 +1,12 @@
 {
   "variants": {
-    "meta=0": {
+    "size=0": {
       "model": "betaextras:BigBrownMushroom"
     },
-    "meta=1": {
+    "size=1": {
       "model": "betaextras:BiggerBrownMushroom"
     },
-    "meta=2": {
+    "size=2": {
       "model": "betaextras:BiggererBrownMushroom"
     }
   }

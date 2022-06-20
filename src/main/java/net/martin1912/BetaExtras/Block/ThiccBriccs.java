@@ -5,10 +5,14 @@ import net.minecraft.block.BlockBase;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.player.PlayerBase;
 import net.minecraft.level.Level;
+import net.modificationstation.stationapi.api.block.BlockState;
 import net.modificationstation.stationapi.api.block.HasMetaNamedBlockItem;
 import net.modificationstation.stationapi.api.item.tool.Pickaxe;
 import net.modificationstation.stationapi.api.item.tool.ToolLevel;
+import net.modificationstation.stationapi.api.level.BlockStateView;
 import net.modificationstation.stationapi.api.registry.Identifier;
+import net.modificationstation.stationapi.api.state.StateManager;
+import net.modificationstation.stationapi.api.state.property.IntProperty;
 import net.modificationstation.stationapi.api.template.block.TemplateBlockBase;
 
 @HasMetaNamedBlockItem
@@ -49,18 +53,36 @@ public class ThiccBriccs extends TemplateBlockBase {
     }
 
     @Override
+    public boolean canUse(Level level, int x, int y, int z, PlayerBase player) {
+        if (((BlockStateView) level).getBlockState(x, y, z).get(ThiccBriccs.METASUBSTITUTE) < 15)
+            ((BlockStateView) level).setBlockState(x, y, z, BlockListener.thiccBriccs.getDefaultState().with(ThiccBriccs.METASUBSTITUTE, ((BlockStateView) level).getBlockState(x, y, z).get(ThiccBriccs.METASUBSTITUTE) + 1));
+        else
+            ((BlockStateView) level).setBlockState(x, y, z, BlockListener.thiccBriccs.getDefaultState().with(ThiccBriccs.METASUBSTITUTE, 0));
+        return true;
+    }
+
+    @Override
+    public void appendProperties(StateManager.Builder<BlockBase, BlockState> builder) {
+        super.appendProperties(builder);
+        builder.add(METASUBSTITUTE);
+    }
+
+    public static final IntProperty METASUBSTITUTE = IntProperty.of("metasubstitute", 0, 15);
+
+    /*
+    @Override
     public int getTextureForSide(int side, int meta) {
         switch (meta) {
             case 0:
-                return TextureListener.ThiccBriccs;
+                return TextureListener.ThiccBriccs; DONE
             case 1:
-                return TextureListener.CutSupahThiccBricc;
+                return TextureListener.CutSupahThiccBricc; DONE
             case 2:
-                return TextureListener.SupahThiccBricc;
+                return TextureListener.SupahThiccBricc; DONE
             case 3:
-                return TextureListener.SmolBriccs;
+                return TextureListener.SmolBriccs; DONE
             case 4:
-                return TextureListener.ThinnBriccs;
+                return TextureListener.ThinnBriccs; DONE
             case 5:
                 switch (side){
                     case 0:
@@ -75,7 +97,7 @@ public class ThiccBriccs extends TemplateBlockBase {
                         return TextureListener.LeftThiccBricc;
                     case 5:
                         return TextureListener.RightThiccBricc;
-                }
+                } DONE
             case 6:
                 switch (side){
                     case 0:
@@ -90,7 +112,7 @@ public class ThiccBriccs extends TemplateBlockBase {
                         return BRICKS.texture;
                     case 5:
                         return TextureListener.ThiccBriccs;
-                }
+                }  DONE
             case 7:
                 switch (side){
                     case 0:
@@ -105,7 +127,7 @@ public class ThiccBriccs extends TemplateBlockBase {
                         return TextureListener.LeftSupahThiccBricc;
                     case 5:
                         return TextureListener.RightSupahThiccBricc;
-                }
+                } DONE
             case 8:
                 switch (side){
                     case 0:
@@ -120,7 +142,7 @@ public class ThiccBriccs extends TemplateBlockBase {
                         return TextureListener.ThiccBriccs;
                     case 5:
                         return TextureListener.SupahThiccBricc;
-                }
+                } DONE
             case 9:
                 switch (side){
                     case 0:
@@ -135,7 +157,7 @@ public class ThiccBriccs extends TemplateBlockBase {
                         return TextureListener.RightThiccBricc;
                     case 5:
                         return TextureListener.LeftThiccBricc;
-                }
+                } DONE
             case 10:
                 switch (side){
                     case 0:
@@ -150,7 +172,7 @@ public class ThiccBriccs extends TemplateBlockBase {
                         return TextureListener.ThiccBriccs;
                     case 5:
                         return BRICKS.texture;
-                }
+                } DONE
             case 11:
                 switch (side){
                     case 0:
@@ -165,7 +187,7 @@ public class ThiccBriccs extends TemplateBlockBase {
                         return TextureListener.RightSupahThiccBricc;
                     case 5:
                         return TextureListener.LeftSupahThiccBricc;
-                }
+                } DONE
             case 12:
                 switch (side){
                     case 0:
@@ -180,15 +202,17 @@ public class ThiccBriccs extends TemplateBlockBase {
                         return TextureListener.SupahThiccBricc;
                     case 5:
                         return TextureListener.ThiccBriccs;
-                }
+                } DONE
             case 13:
-                return TextureListener.CursedBricks;
+                return TextureListener.CursedBricks; DONE?
             case 14:
-                return TextureListener.SuperCursedBricks;
+                return TextureListener.SuperCursedBricks; DONE?
             case 15:
-                return TextureListener.HyperCursedBricks;
+                return TextureListener.HyperCursedBricks; DONE?
             default:
                 return super.getTextureForSide(side, meta);
         }
     }
+
+     */
 }

@@ -1,0 +1,52 @@
+{
+  "variants": {
+    "metasubstitute=0": {
+      "model": "betaextras:WhiteBricks"
+    },
+    "metasubstitute=1": {
+      "model": "betaextras:OrangeBricks"
+    },
+    "metasubstitute=2": {
+      "model": "betaextras:MagentaBricks"
+    },
+    "metasubstitute=3": {
+      "model": "betaextras:LightblueBricks"
+    },
+    "metasubstitute=4": {
+      "model": "betaextras:YellowBricks"
+    },
+    "metasubstitute=5": {
+      "model": "betaextras:LimeBricks"
+    },
+    "metasubstitute=6": {
+      "model": "betaextras:PinkBricks"
+    },
+    "metasubstitute=7": {
+      "model": "betaextras:GrayBricks"
+    },
+    "metasubstitute=8": {
+      "model": "betaextras:LightgrayBricks"
+    },
+    "metasubstitute=9": {
+      "model": "betaextras:CyanBricks"
+    },
+    "metasubstitute=10": {
+      "model": "betaextras:PurpleBricks"
+    },
+    "metasubstitute=11": {
+      "model": "betaextras:BlueBricks"
+    },
+    "metasubstitute=12": {
+      "model": "betaextras:BrownBricks"
+    },
+    "metasubstitute=13": {
+      "model": "betaextras:GreenBricks"
+    },
+    "metasubstitute=14": {
+      "model": "betaextras:RedBricks"
+    },
+    "metasubstitute=15": {
+      "model": "betaextras:BlackBricks"
+    }
+  }
+}

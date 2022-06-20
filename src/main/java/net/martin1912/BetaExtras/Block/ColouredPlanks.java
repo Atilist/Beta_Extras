@@ -1,21 +1,21 @@
 package net.martin1912.BetaExtras.Block;
 
-import net.minecraft.block.BlockBase;
 import net.minecraft.block.material.Material;
 import net.modificationstation.stationapi.api.block.HasMetaNamedBlockItem;
 import net.modificationstation.stationapi.api.registry.Identifier;
 import net.modificationstation.stationapi.api.template.block.TemplateBlockBase;
 
 @HasMetaNamedBlockItem
-public class ColoredTerracotta extends TemplateBlockBase {
+public class ColouredPlanks extends TemplateBlockBase {
 
-    public ColoredTerracotta(Identifier identifier, Material material) {
+    public ColouredPlanks(Identifier identifier, Material material) {
         super(identifier, material);
+        setSounds(WOOD.sounds);
     }
 
     @Override
-    public ColoredTerracotta setHardness(float Hardness) {
-        return (ColoredTerracotta) super.setHardness(Hardness);
+    public ColouredPlanks setHardness(float Hardness) {
+        return (ColouredPlanks) super.setHardness(Hardness);
     }
 
     @Override
@@ -27,54 +27,55 @@ public class ColoredTerracotta extends TemplateBlockBase {
     public int getTextureForSide(int side, int meta) {
         switch (meta) {
             case 0: {
-                return TextureListener.WhiteTerracotta;
+                return TextureListener.WhitePlanks;
             }
             case 1: {
-                return TextureListener.OrangeTerracotta;
+                return TextureListener.OrangePlanks;
             }
             case 2: {
-                return TextureListener.MagentaTerracotta;
+                return TextureListener.MagentaPlanks;
             }
             case 3: {
-                return TextureListener.LightblueTerracotta;
+                return TextureListener.LightbluePlanks;
             }
             case 4: {
-                return TextureListener.YellowTerracotta;
+                return TextureListener.YellowPlanks;
             }
             case 5: {
-                return TextureListener.LimeTerracotta;
+                return TextureListener.LimePlanks;
             }
             case 6: {
-                return TextureListener.PinkTerracotta;
+                return TextureListener.PinkPlanks;
             }
             case 7: {
-                return TextureListener.GrayTerracotta;
+                return TextureListener.GrayPlanks;
             }
             case 8: {
-                return TextureListener.LightgrayTerracotta;
+                return TextureListener.LightgrayPlanks;
             }
             case 9: {
-                return TextureListener.CyanTerracotta;
+                return TextureListener.CyanPlanks;
             }
             case 10: {
-                return TextureListener.PurpleTerracotta;
+                return TextureListener.PurplePlanks;
             }
             case 11: {
-                return TextureListener.BlueTerracotta;
+                return TextureListener.BluePlanks;
             }
             case 12: {
-                return TextureListener.BrownTerracotta;
+                return TextureListener.BrownPlanks;
             }
             case 13: {
-                return TextureListener.GreenTerracotta;
+                return TextureListener.GreenPlanks;
             }
             case 14: {
-                return TextureListener.RedTerracotta;
+                return TextureListener.RedPlanks;
             }
             case 15: {
-                return TextureListener.BlackTerracotta;
+                return TextureListener.BlackPlanks;
             }
             default:
                 return super.getTextureForSide(side, meta);}
+
     }
 }
