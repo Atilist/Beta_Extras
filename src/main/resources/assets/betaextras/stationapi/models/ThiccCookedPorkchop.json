@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "particle": "betaextras:ThiccFlesh/ThiccCookedPorkchopBottom",
+    "down": "betaextras:ThiccFlesh/ThiccCookedPorkchopBottom",
+    "up": "betaextras:ThiccFlesh/ThiccCookedPorkchopTop",
+    "north": "betaextras:ThiccFlesh/ThiccCookedPorkchopSide",
+    "east": "betaextras:ThiccFlesh/ThiccCookedPorkchopSide",
+    "south": "betaextras:ThiccFlesh/ThiccCookedPorkchopSide",
+    "west": "betaextras:ThiccFlesh/ThiccCookedPorkchopSide"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "variants": {
+    "metasubstitute=0": {
+      "model": "betaextras:WhitePillow"
+    },
+    "metasubstitute=1": {
+      "model": "betaextras:OrangePillow"
+    },
+    "metasubstitute=2": {
+      "model": "betaextras:MagentaPillow"
+    },
+    "metasubstitute=3": {
+      "model": "betaextras:LightbluePillow"
+    },
+    "metasubstitute=4": {
+      "model": "betaextras:YellowPillow"
+    },
+    "metasubstitute=5": {
+      "model": "betaextras:LimePillow"
+    },
+    "metasubstitute=6": {
+      "model": "betaextras:PinkPillow"
+    },
+    "metasubstitute=7": {
+      "model": "betaextras:GrayPillow"
+    },
+    "metasubstitute=8": {
+      "model": "betaextras:LightgrayPillow"
+    },
+    "metasubstitute=9": {
+      "model": "betaextras:CyanPillow"
+    },
+    "metasubstitute=10": {
+      "model": "betaextras:PurplePillow"
+    },
+    "metasubstitute=11": {
+      "model": "betaextras:BluePillow"
+    },
+    "metasubstitute=12": {
+      "model": "betaextras:BrownPillow"
+    },
+    "metasubstitute=13": {
+      "model": "betaextras:GreenPillow"
+    },
+    "metasubstitute=14": {
+      "model": "betaextras:RedPillow"
+    },
+    "metasubstitute=15": {
+      "model": "betaextras:BlackPillow"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "metasubstitute=0": {
+      "model": "betaextras:Pillow"
+    },
+    "metasubstitute=1": {
+      "model": "betaextras:LoomedBlock"
+    },
+    "metasubstitute=2": {
+      "model": "betaextras:LeatherCube"
+    }
+  }
+}

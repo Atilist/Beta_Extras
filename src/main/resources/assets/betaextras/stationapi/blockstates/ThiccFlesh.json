@@ -1,0 +1,25 @@
+{
+  "variants": {
+    "metasubstitute=0": {
+      "model": "betaextras:ThiccInkSac"
+    },
+    "metasubstitute=1": {
+      "model": "betaextras:ThiccRawPorkchop"
+    },
+    "metasubstitute=2": {
+      "model": "betaextras:ThiccCookedPorkchop"
+    },
+    "metasubstitute=3": {
+      "model": "betaextras:ThiccInkSans"
+    },
+    "metasubstitute=4": {
+      "model": "betaextras:DirtBricks"
+    },
+    "metasubstitute=5": {
+      "model": "betaextras:AbominationBricks"
+    },
+    "metasubstitute=6": {
+      "model": "betaextras:Fabricks"
+    }
+  }
+}
