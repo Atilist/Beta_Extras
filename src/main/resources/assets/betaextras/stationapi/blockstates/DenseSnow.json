@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "metasubstitute=0": {
+      "model": "betaextras:DenseSnow"
+    },
+    "metasubstitute=1": {
+      "model": "betaextras:VeryDenseSnow"
+    },
+    "metasubstitute=2": {
+      "model": "betaextras:DenseSlush"
+    }
+  }
+}

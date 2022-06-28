@@ -1,0 +1,23 @@
+{
+  "variants": {
+    "metasubstitute=0": {
+      "model": "betaextras:RedSandstoneSmooth"
+    },
+    "metasubstitute=1": {
+      "model": "betaextras:RedSandstoneNormal"
+    },
+    "metasubstitute=2": {
+      "model": "betaextras:RedSandstoneRough"
+    },
+    "metasubstitute=3": {
+      "model": "betaextras:RedSandstoneStacks"
+    },
+    "metasubstitute=4": {
+      "model": "betaextras:RedSandstoneCut"
+    },
+    "metasubstitute=5": {
+      "model": "betaextras:RedSandstoneCarved"
+    }
+  }
+}
+

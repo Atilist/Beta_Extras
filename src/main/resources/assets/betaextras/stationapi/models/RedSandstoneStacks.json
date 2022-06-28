@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "particle": "betaextras:RedSandstone/RedSandstoneStacksBottom",
+    "down": "betaextras:RedSandstone/RedSandstoneStacksBottom",
+    "up": "betaextras:RedSandstone/RedSandstoneSmooth",
+    "north": "betaextras:RedSandstone/RedSandstoneStacks",
+    "east": "betaextras:RedSandstone/RedSandstoneStacks",
+    "south": "betaextras:RedSandstone/RedSandstoneStacks",
+    "west": "betaextras:RedSandstone/RedSandstoneStacks"
+  }
+}

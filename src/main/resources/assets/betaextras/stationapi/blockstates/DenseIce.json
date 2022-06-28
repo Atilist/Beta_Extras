@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "metasubstitute=0": {
+      "model": "betaextras:DenseIce"
+    },
+    "metasubstitute=1": {
+      "model": "betaextras:VeryDenseIce"
+    },
+    "metasubstitute=2": {
+      "model": "betaextras:IceIron"
+    },
+    "metasubstitute=3": {
+      "model": "betaextras:IceGold"
+    },
+    "metasubstitute=4": {
+      "model": "betaextras:IceBricks"
+    },
+    "metasubstitute=5": {
+      "model": "betaextras:IceThiccBriccs"
+    }
+  }
+}

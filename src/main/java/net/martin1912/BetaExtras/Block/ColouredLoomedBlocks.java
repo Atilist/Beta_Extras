@@ -1,12 +1,18 @@
 package net.martin1912.BetaExtras.Block;
 
 
+import net.minecraft.block.BlockBase;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.EntityBase;
+import net.minecraft.entity.player.PlayerBase;
 import net.minecraft.level.Level;
 import net.minecraft.util.maths.Box;
+import net.modificationstation.stationapi.api.block.BlockState;
 import net.modificationstation.stationapi.api.block.HasMetaNamedBlockItem;
+import net.modificationstation.stationapi.api.level.BlockStateView;
 import net.modificationstation.stationapi.api.registry.Identifier;
+import net.modificationstation.stationapi.api.state.StateManager;
+import net.modificationstation.stationapi.api.state.property.IntProperty;
 import net.modificationstation.stationapi.api.template.block.TemplateBlockBase;
 
 @HasMetaNamedBlockItem
@@ -90,4 +96,21 @@ public class ColouredLoomedBlocks extends TemplateBlockBase {
         float var5 = 0.35F;
         return Box.create((double)x, (double)y, (double)z, (double)(x + 1), (double)((float)(y + 1) - var5), (double)(z + 1));
     }
+
+    @Override
+    public boolean canUse(Level level, int x, int y, int z, PlayerBase player) {
+        if (((BlockStateView) level).getBlockState(x, y, z).get(ColouredLoomedBlocks.METASUBSTITUTE) < 15)
+            ((BlockStateView) level).setBlockState(x, y, z, BlockListener.colouredLoomedBlocks.getDefaultState().with(ColouredLoomedBlocks.METASUBSTITUTE, ((BlockStateView) level).getBlockState(x, y, z).get(ColouredLoomedBlocks.METASUBSTITUTE) + 1));
+        else
+            ((BlockStateView) level).setBlockState(x, y, z, BlockListener.colouredLoomedBlocks.getDefaultState().with(ColouredLoomedBlocks.METASUBSTITUTE, 0));
+        return true;
+    }
+
+    @Override
+    public void appendProperties(StateManager.Builder<BlockBase, BlockState> builder) {
+        super.appendProperties(builder);
+        builder.add(METASUBSTITUTE);
+    }
+
+    public static final IntProperty METASUBSTITUTE = IntProperty.of("metasubstitute", 0, 15);
 }

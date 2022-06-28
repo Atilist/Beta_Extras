@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "metasubstitute=0": {
+      "model": "betaextras:SwampLeaves"
+    },
+    "metasubstitute=1": {
+      "model": "betaextras:BeechLeaves"
+    }
+  }
+}

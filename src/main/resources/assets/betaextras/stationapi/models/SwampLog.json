@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "particle": "betaextras:SwampFoliage/SwampLogSide",
+    "down": "betaextras:SwampFoliage/SwampLogTopBottom",
+    "up": "betaextras:SwampFoliage/SwampLogTopBottom",
+    "north": "betaextras:SwampFoliage/SwampLogSide",
+    "east": "betaextras:SwampFoliage/SwampLogSide",
+    "south": "betaextras:SwampFoliage/SwampLogSide",
+    "west": "betaextras:SwampFoliage/SwampLogSide"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "metasubstitute=0": {
+      "model": "betaextras:SwampLog"
+    },
+    "metasubstitute=1": {
+      "model": "betaextras:BeechLog"
+    }
+  }
+}

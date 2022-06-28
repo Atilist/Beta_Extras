@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "particle": "betaextras:MoreTrees/BeechLogTop",
+    "down": "betaextras:MoreTrees/BeechLogTop",
+    "up": "betaextras:MoreTrees/BeechLogTop",
+    "north": "betaextras:MoreTrees/BeechLogSide",
+    "east": "betaextras:MoreTrees/BeechLogSide",
+    "south": "betaextras:MoreTrees/BeechLogSide",
+    "west": "betaextras:MoreTrees/BeechLogSide"
+  }
+}

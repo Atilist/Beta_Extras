@@ -6,10 +6,15 @@ import net.fabricmc.api.Environment;
 import net.minecraft.block.BlockBase;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.render.block.FoliageColour;
+import net.minecraft.entity.player.PlayerBase;
 import net.minecraft.level.BlockView;
 import net.minecraft.level.Level;
+import net.modificationstation.stationapi.api.block.BlockState;
 import net.modificationstation.stationapi.api.block.HasMetaNamedBlockItem;
+import net.modificationstation.stationapi.api.level.BlockStateView;
 import net.modificationstation.stationapi.api.registry.Identifier;
+import net.modificationstation.stationapi.api.state.StateManager;
+import net.modificationstation.stationapi.api.state.property.IntProperty;
 import net.modificationstation.stationapi.api.template.block.TemplateBlockBase;
 
 
@@ -164,27 +169,13 @@ public class ExtraLeaves extends TemplateBlockBase {
     @Override
     @Environment(EnvType.CLIENT)
     public int getBaseColour(int i) {
-        if ((i & 1) == 1) {
-            return FoliageColour.method_1079();
-        } else {
-            return (i & 2) == 2 ? FoliageColour.method_1082() : FoliageColour.method_1083();
-        }
+        return FoliageColour.method_1079();
     }
 
     @Override
     @Environment(EnvType.CLIENT)
     public int getColourMultiplier(BlockView arg, int x, int y, int z) {
-        int var5 = arg.getTileMeta(x, y, z);
-        if ((var5 & 1) == 1) {
-            return FoliageColour.method_1079();
-        } else if ((var5 & 2) == 2) {
-            return FoliageColour.method_1082();
-        } else {
-            arg.getBiomeSource().getBiomes(x, z, 1, 1);
-            double var6 = arg.getBiomeSource().temperatureNoises[0];
-            double var8 = arg.getBiomeSource().rainfallNoises[0];
-            return FoliageColour.method_1080(var6, var8);
-        }
+        return FoliageColour.method_1079();
     }
 
     @Override
@@ -196,4 +187,21 @@ public class ExtraLeaves extends TemplateBlockBase {
     public boolean isFullOpaque() {
         return false;
     }
+
+    @Override
+    public boolean canUse(Level level, int x, int y, int z, PlayerBase player) {
+        if (((BlockStateView) level).getBlockState(x, y, z).get(ExtraLeaves.METASUBSTITUTE) < 1)
+            ((BlockStateView) level).setBlockState(x, y, z, BlockListener.extraLeaves.getDefaultState().with(ExtraLeaves.METASUBSTITUTE, ((BlockStateView) level).getBlockState(x, y, z).get(ExtraLeaves.METASUBSTITUTE) + 1));
+        else
+            ((BlockStateView) level).setBlockState(x, y, z, BlockListener.extraLeaves.getDefaultState().with(ExtraLeaves.METASUBSTITUTE, 0));
+        return true;
+    }
+
+    @Override
+    public void appendProperties(StateManager.Builder<BlockBase, BlockState> builder) {
+        super.appendProperties(builder);
+        builder.add(METASUBSTITUTE);
+    }
+
+    public static final IntProperty METASUBSTITUTE = IntProperty.of("metasubstitute", 0, 1);
 }

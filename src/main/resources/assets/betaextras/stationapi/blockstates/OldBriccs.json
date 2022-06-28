@@ -1,0 +1,46 @@
+{
+  "variants": {
+    "metasubstitute=0": {
+      "model": "betaextras:OldBricks"
+    },
+    "metasubstitute=1": {
+      "model": "betaextras:OldThiccBriccs"
+    },
+    "metasubstitute=2": {
+      "model": "betaextras:OldCutSupahThiccBricc"
+    },
+    "metasubstitute=3": {
+      "model": "betaextras:OldSupahThiccBricc"
+    },
+    "metasubstitute=4": {
+      "model": "betaextras:OldSmolBriccs"
+    },
+    "metasubstitute=5": {
+      "model": "betaextras:OldThinnBriccs"
+    },
+    "metasubstitute=6": {
+      "model": "betaextras:OldHalfThiccBriccOne"
+    },
+    "metasubstitute=7": {
+      "model": "betaextras:OldHalfThiccBriccTwo"
+    },
+    "metasubstitute=8": {
+      "model": "betaextras:OldHalfSupahThiccBriccOne"
+    },
+    "metasubstitute=9": {
+      "model": "betaextras:OldHalfSupahThiccBriccTwo"
+    },
+    "metasubstitute=10": {
+      "model": "betaextras:OldHalfThiccBriccThree"
+    },
+    "metasubstitute=11": {
+      "model": "betaextras:OldHalfThiccBriccFour"
+    },
+    "metasubstitute=12": {
+      "model": "betaextras:OldHalfSupahThiccBriccThree"
+    },
+    "metasubstitute=13": {
+      "model": "betaextras:OldHalfSupahThiccBriccFour"
+    }
+  }
+}

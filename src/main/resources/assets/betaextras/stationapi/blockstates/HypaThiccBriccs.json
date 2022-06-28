@@ -1,0 +1,41 @@
+{
+  "variants": {
+    "metasubstitute=0": {
+      "model": "betaextras:HypaThiccBriccTop"
+    },
+    "metasubstitute=1": {
+      "model": "betaextras:HypaThiccBriccMiddle"
+    },
+    "metasubstitute=2": {
+      "model": "betaextras:HypaThiccBriccBottom"
+    },
+    "metasubstitute=3": {
+      "model": "betaextras:HypaThiccBriccGlue"
+    },
+    "metasubstitute=4": {
+      "model": "betaextras:OldHypaThiccBriccTop"
+    },
+    "metasubstitute=5": {
+      "model": "betaextras:OldHypaThiccBriccMiddle"
+    },
+    "metasubstitute=6": {
+      "model": "betaextras:OldHypaThiccBriccBottom"
+    },
+    "metasubstitute=7": {
+      "model": "betaextras:OldHypaThiccBriccGlue"
+    },
+    "metasubstitute=8": {
+      "model": "betaextras:AlphaHypaThiccBriccTop"
+    },
+    "metasubstitute=9": {
+      "model": "betaextras:AlphaHypaThiccBriccMiddle"
+    },
+    "metasubstitute=10": {
+      "model": "betaextras:AlphaHypaThiccBriccBottom"
+    },
+    "metasubstitute=11": {
+      "model": "betaextras:AlphaHypaThiccBriccGlue"
+    }
+  }
+}
+

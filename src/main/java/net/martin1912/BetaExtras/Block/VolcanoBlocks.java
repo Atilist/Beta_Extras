@@ -3,9 +3,14 @@ package net.martin1912.BetaExtras.Block;
 import net.minecraft.block.BlockBase;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.EntityBase;
+import net.minecraft.entity.player.PlayerBase;
 import net.minecraft.level.Level;
+import net.modificationstation.stationapi.api.block.BlockState;
 import net.modificationstation.stationapi.api.block.HasMetaNamedBlockItem;
+import net.modificationstation.stationapi.api.level.BlockStateView;
 import net.modificationstation.stationapi.api.registry.Identifier;
+import net.modificationstation.stationapi.api.state.StateManager;
+import net.modificationstation.stationapi.api.state.property.IntProperty;
 import net.modificationstation.stationapi.api.template.block.TemplateBlockBase;
 
 import java.util.Random;
@@ -64,6 +69,7 @@ public class VolcanoBlocks extends TemplateBlockBase {
 
     @Override
     public void onScheduledTick(Level level, int x, int y, int z, Random rand) {
+        /*
         if (level.getTileMeta(x, y, z) == 0) {
             level.method_216(x, y, z, BlockListener.volcanoBlocks.id, 10);
             for (int height = y; height < 127; height++) {
@@ -101,6 +107,8 @@ public class VolcanoBlocks extends TemplateBlockBase {
                     break;
             }
         }
+
+         */
     }
 
     private void erupt(Level level, int x, int y, int z, Random rand) {
@@ -127,4 +135,21 @@ public class VolcanoBlocks extends TemplateBlockBase {
 
     int timer = 32;
     short mode = 0;
+
+    @Override
+    public boolean canUse(Level level, int x, int y, int z, PlayerBase player) {
+        if (((BlockStateView) level).getBlockState(x, y, z).get(VolcanoBlocks.METASUBSTITUTE) < 13)
+            ((BlockStateView) level).setBlockState(x, y, z, BlockListener.volcanoBlocks.getDefaultState().with(VolcanoBlocks.METASUBSTITUTE, ((BlockStateView) level).getBlockState(x, y, z).get(VolcanoBlocks.METASUBSTITUTE) + 1));
+        else
+            ((BlockStateView) level).setBlockState(x, y, z, BlockListener.volcanoBlocks.getDefaultState().with(VolcanoBlocks.METASUBSTITUTE, 0));
+        return true;
+    }
+
+    @Override
+    public void appendProperties(StateManager.Builder<BlockBase, BlockState> builder) {
+        super.appendProperties(builder);
+        builder.add(METASUBSTITUTE);
+    }
+
+    public static final IntProperty METASUBSTITUTE = IntProperty.of("metasubstitute", 0, 13);
 }

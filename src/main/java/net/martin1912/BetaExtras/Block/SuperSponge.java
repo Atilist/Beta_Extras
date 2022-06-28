@@ -8,8 +8,12 @@ import net.minecraft.entity.player.PlayerBase;
 import net.minecraft.item.ItemBase;
 import net.minecraft.item.ItemInstance;
 import net.minecraft.level.Level;
+import net.modificationstation.stationapi.api.block.BlockState;
 import net.modificationstation.stationapi.api.block.HasMetaNamedBlockItem;
+import net.modificationstation.stationapi.api.level.BlockStateView;
 import net.modificationstation.stationapi.api.registry.Identifier;
+import net.modificationstation.stationapi.api.state.StateManager;
+import net.modificationstation.stationapi.api.state.property.IntProperty;
 import net.modificationstation.stationapi.api.template.block.TemplateBlockBase;
 
 import java.util.Random;
@@ -24,7 +28,7 @@ public class SuperSponge extends TemplateBlockBase {
 
     @Override
     public void onAdjacentBlockUpdate(Level level, int x, int y, int z, int id) {
-        if (level.getTileMeta(x, y, z) == 0 && level.hasRedstonePower(x, y, z)) {
+        if ( ((BlockStateView)level).getBlockState(x, y, z).get(SuperSponge.METASUBSTITUTE)  == 0 && level.hasRedstonePower(x, y, z)) {
             drainWater(level, x, y, z);
         }
     }
@@ -43,7 +47,7 @@ public class SuperSponge extends TemplateBlockBase {
                     for (int zOffset = -2; zOffset <= 2; zOffset++)
                         if (level.getTileId(x + xOffset, y + yOffset, z + zOffset) == BlockBase.FLOWING_WATER.id || level.getTileId(x + xOffset, y + yOffset, z + zOffset) == BlockBase.STILL_WATER.id)
                             level.setTile(x + xOffset, y + yOffset, z + zOffset, 0);
-            level.placeBlockWithMetaData(x, y, z, BlockListener.superSponge.id, 1);
+            ((BlockStateView)level).setBlockState(x, y, z, BlockListener.superSponge.getDefaultState().with(SuperSponge.METASUBSTITUTE, 1));
         }
     }
 
@@ -72,10 +76,18 @@ public class SuperSponge extends TemplateBlockBase {
 
     @Override
     public boolean canUse(Level level, int x, int y, int z, PlayerBase player) {
-        if (level.getTileMeta(x, y, z) == 0) {
+        if (((BlockStateView)level).getBlockState(x, y, z).get(SuperSponge.METASUBSTITUTE) == 0) {
             drainWater(level, x, y, z);
             return true;
         }
         return false;
     }
+
+    @Override
+    public void appendProperties(StateManager.Builder<BlockBase, BlockState> builder) {
+        super.appendProperties(builder);
+        builder.add(METASUBSTITUTE);
+    }
+
+    public static final IntProperty METASUBSTITUTE = IntProperty.of("metasubstitute", 0, 1);
 }

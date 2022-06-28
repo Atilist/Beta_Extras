@@ -1,0 +1,52 @@
+{
+  "variants": {
+    "metasubstitute=0": {
+      "model": "betaextras:WhiteLeatherCube"
+    },
+    "metasubstitute=1": {
+      "model": "betaextras:OrangeLeatherCube"
+    },
+    "metasubstitute=2": {
+      "model": "betaextras:MagentaLeatherCube"
+    },
+    "metasubstitute=3": {
+      "model": "betaextras:LightblueLeatherCube"
+    },
+    "metasubstitute=4": {
+      "model": "betaextras:YellowLeatherCube"
+    },
+    "metasubstitute=5": {
+      "model": "betaextras:LimeLeatherCube"
+    },
+    "metasubstitute=6": {
+      "model": "betaextras:PinkLeatherCube"
+    },
+    "metasubstitute=7": {
+      "model": "betaextras:GrayLeatherCube"
+    },
+    "metasubstitute=8": {
+      "model": "betaextras:LightgrayLeatherCube"
+    },
+    "metasubstitute=9": {
+      "model": "betaextras:CyanLeatherCube"
+    },
+    "metasubstitute=10": {
+      "model": "betaextras:PurpleLeatherCube"
+    },
+    "metasubstitute=11": {
+      "model": "betaextras:BlueLeatherCube"
+    },
+    "metasubstitute=12": {
+      "model": "betaextras:BrownLeatherCube"
+    },
+    "metasubstitute=13": {
+      "model": "betaextras:GreenLeatherCube"
+    },
+    "metasubstitute=14": {
+      "model": "betaextras:RedLeatherCube"
+    },
+    "metasubstitute=15": {
+      "model": "betaextras:BlackLeatherCube"
+    }
+  }
+}

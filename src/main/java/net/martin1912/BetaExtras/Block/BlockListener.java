@@ -15,6 +15,16 @@ import java.util.HashMap;
 
 import static net.modificationstation.stationapi.api.registry.Identifier.of;
 
+/* """Fun""" stuff to do:
+    Fix all Blockstates
+    Fix all functionality requiring Blockstates
+    Add Blockstate Items
+    Fix crafting recipes
+    Add tool effectiveness to blocks
+    Add new content
+    Go even more insane
+ */
+
 public class BlockListener {
     @Entrypoint.ModID
     private ModID modID;
@@ -41,15 +51,14 @@ public class BlockListener {
         extraLogs = new ExtraLogs(of(modID,"ExtraLogs"), Material.WOOD).setHardness(1.5F).setTranslationKey(modID,"extra_logs");
         extraLeaves = new ExtraLeaves(of(modID,"ExtraLeaves"), Material.LEAVES).setHardness(0.25F).setTranslationKey(modID,"extra_leaves");
         extraSaplings = new ExtraSaplings(of(modID,"ExtraSaplings")).setHardness(0.0F).setTranslationKey(modID,"extra_saplings");
-        superSponge = new SuperSponge(of(modID,"SuperSponge"), Material.SPONGE).setHardness(0.5F).setTranslationKey(modID,"super_sponge");
+        superSponge = new SuperSponge(of(modID,"SuperSponge"), Material.SPONGE).setHardness(0.5F).setTranslationKey(modID,"super_sponge"); //Mechanics already ported
         oldBriccs = new OldBriccs(of(modID,"OldBriccs"), Material.STONE).setHardness(1.5F).setTranslationKey(modID,"old_briccs");
-        hypaThiccBriccs = new HypaThiccBriccs(of("modID,HypaThiccBriccs"), Material.STONE).setHardness(1.5F).setTranslationKey(modID,"hypa_thicc_briccs");
+        hypaThiccBriccs = new HypaThiccBriccs(of(modID, "HypaThiccBriccs"), Material.STONE).setHardness(1.5F).setTranslationKey(modID,"hypa_thicc_briccs"); // WHY DID THE MISPLACED MOD ID NOT GIVE OFF ANY ERROR!? THIS IS SPARTA!!!
         volcanoBlocks = new VolcanoBlocks(of(modID,"VolcanoBlocks"), Material.STONE).setHardness(1.5F).setBlastResistance(20.0F).setTranslationKey(modID,"volcano_blocks");
         redSandstone = new RedSandstone(of(modID,"RedSandstone"), Material.STONE).setHardness(1.0F).setTranslationKey(modID,"red_sandstone");
-        finiteLiquid = new FiniteLiquid(of(modID,"FiniteLiquid"), Material.LAVA).setHardness(1.0F).setLightEmittance(1.0F).setTranslationKey(modID,"finite_liquid");
-        dynamicBasalt = new DynamicBasalt(of(modID,"DynamicBasalt"), Material.STONE).setHardness(1.5F).setLightEmittance(0.2F).setTranslationKey(modID,"dynamic_basalt");
-        staticBasalt = new StaticBasalt(of(modID,"StaticBasalt"), Material.STONE).setHardness(1.5F).setTranslationKey(modID,"static_basalt");
-
+        finiteLiquid = new FiniteLiquid(of(modID,"FiniteLiquid"), Material.LAVA).setHardness(1.0F).setLightEmittance(1.0F).setTranslationKey(modID,"finite_liquid"); // The trinity of pure awfulness
+        dynamicBasalt = new DynamicBasalt(of(modID,"DynamicBasalt"), Material.STONE).setHardness(1.5F).setLightEmittance(0.2F).setTranslationKey(modID,"dynamic_basalt"); // The trinity of pure awfulness
+        staticBasalt = new StaticBasalt(of(modID,"StaticBasalt"), Material.STONE).setHardness(1.5F).setTranslationKey(modID,"static_basalt"); // The trinity of pure awfulness
         denseSnow = new DenseSnow(of(modID,"DenseSnow"), Material.SNOW_BLOCK).setHardness(0.75F).setTranslationKey(modID,"dense_snow");
         denseIce = new DenseIce(of(modID,"DenseIce"), Material.STONE).setHardness(1.0F).setTranslationKey(modID,"dense_ice");
 
@@ -104,3 +113,21 @@ public class BlockListener {
     public static HashMap<Integer, int[]> colouredToNonColoured = new HashMap<>();
 }
 
+/*
+
+   88
+  8888
+##881111
+##881111
+##8888
+##8888
+  8888
+  8  8
+  8  8
+
+ */
+
+// Fortnite
+// Among us
+// Communism
+// In Minecraft

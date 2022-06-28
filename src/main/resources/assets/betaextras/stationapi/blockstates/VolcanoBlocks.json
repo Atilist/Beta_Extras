@@ -1,0 +1,46 @@
+{
+  "variants": {
+    "metasubstitute=0": {
+      "model": "betaextras:VolcanoHeart"
+    },
+    "metasubstitute=1": {
+      "model": "betaextras:CarvedRoughBasalt"
+    },
+    "metasubstitute=2": {
+      "model": "betaextras:CleanBasalt"
+    },
+    "metasubstitute=3": {
+      "model": "betaextras:CarvedCleanBasalt"
+    },
+    "metasubstitute=4": {
+      "model": "betaextras:SmoothBasalt"
+    },
+    "metasubstitute=5": {
+      "model": "betaextras:CarvedSmoothBasalt"
+    },
+    "metasubstitute=6": {
+      "model": "betaextras:BasaltThiccBriccs"
+    },
+    "metasubstitute=7": {
+      "model": "betaextras:BasaltBricks"
+    },
+    "metasubstitute=8": {
+      "model": "betaextras:Pumice"
+    },
+    "metasubstitute=9": {
+      "model": "betaextras:CarvedPumice"
+    },
+    "metasubstitute=10": {
+      "model": "betaextras:SmoothPumice"
+    },
+    "metasubstitute=11": {
+      "model": "betaextras:DarkPumice"
+    },
+    "metasubstitute=12": {
+      "model": "betaextras:RoughBasalt"
+    },
+    "metasubstitute=13": {
+      "model": "betaextras:BasaltPebbles"
+    }
+  }
+}

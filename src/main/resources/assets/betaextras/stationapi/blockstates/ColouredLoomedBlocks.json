@@ -1,0 +1,52 @@
+{
+  "variants": {
+    "metasubstitute=0": {
+      "model": "betaextras:WhiteLoomedBlock"
+    },
+    "metasubstitute=1": {
+      "model": "betaextras:OrangeLoomedBlock"
+    },
+    "metasubstitute=2": {
+      "model": "betaextras:MagentaLoomedBlock"
+    },
+    "metasubstitute=3": {
+      "model": "betaextras:LightblueLoomedBlock"
+    },
+    "metasubstitute=4": {
+      "model": "betaextras:YellowLoomedBlock"
+    },
+    "metasubstitute=5": {
+      "model": "betaextras:LimeLoomedBlock"
+    },
+    "metasubstitute=6": {
+      "model": "betaextras:PinkLoomedBlock"
+    },
+    "metasubstitute=7": {
+      "model": "betaextras:GrayLoomedBlock"
+    },
+    "metasubstitute=8": {
+      "model": "betaextras:LightgrayLoomedBlock"
+    },
+    "metasubstitute=9": {
+      "model": "betaextras:CyanLoomedBlock"
+    },
+    "metasubstitute=10": {
+      "model": "betaextras:PurpleLoomedBlock"
+    },
+    "metasubstitute=11": {
+      "model": "betaextras:BlueLoomedBlock"
+    },
+    "metasubstitute=12": {
+      "model": "betaextras:BrownLoomedBlock"
+    },
+    "metasubstitute=13": {
+      "model": "betaextras:GreenLoomedBlock"
+    },
+    "metasubstitute=14": {
+      "model": "betaextras:RedLoomedBlock"
+    },
+    "metasubstitute=15": {
+      "model": "betaextras:BlackLoomedBlock"
+    }
+  }
+}

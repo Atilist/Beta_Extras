@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "metasubstitute=0": {
+      "model": "betaextras:SwampSaplingSmall"
+    },
+    "metasubstitute=1": {
+      "model": "betaextras:SwampSapling"
+    }
+  }
+}
