@@ -2,11 +2,16 @@ package net.martin1912.BetaExtras.Block;
 
 import net.minecraft.block.BlockBase;
 import net.minecraft.block.material.Material;
+import net.minecraft.entity.player.PlayerBase;
 import net.minecraft.level.BlockView;
 import net.minecraft.level.Level;
 import net.minecraft.util.maths.Box;
+import net.modificationstation.stationapi.api.block.BlockState;
 import net.modificationstation.stationapi.api.block.HasMetaNamedBlockItem;
+import net.modificationstation.stationapi.api.level.BlockStateView;
 import net.modificationstation.stationapi.api.registry.Identifier;
+import net.modificationstation.stationapi.api.state.StateManager;
+import net.modificationstation.stationapi.api.state.property.IntProperty;
 import net.modificationstation.stationapi.api.template.block.TemplateBlockBase;
 
 import java.util.Random;
@@ -45,6 +50,7 @@ public class FiniteLiquid extends TemplateBlockBase {
 
     @Override
     public void onAdjacentBlockUpdate(Level level, int x, int y, int z, int id) {
+        /*
         Random random = new Random();
         if (level.getTileId(x, y + 1, z) == BlockBase.FLOWING_WATER.id || level.getTileId(x, y + 1, z) == BlockBase.STILL_WATER.id || level.getTileId(x, y + 1, z) == BlockBase.ICE.id) {
             level.placeBlockWithMetaData(x, y, z, BlockListener.volcanoBlocks.id, 8);
@@ -58,10 +64,13 @@ public class FiniteLiquid extends TemplateBlockBase {
         } else if (level.getTileId(x, y - 1, z) == BlockBase.FLOWING_LAVA.id || level.getTileId(x, y - 1, z) == BlockBase.STILL_LAVA.id) {
             level.placeBlockWithMetaData(x, y, z, BlockListener.volcanoBlocks.id, 13);
         }
+
+         */
     }
 
     @Override
     public void onScheduledTick(Level level, int x, int y, int z, Random rand) {
+        /*
         level.method_216(x, y, z, BlockListener.finiteLiquid.id, 10);
         int belowMeta = level.getTileMeta(x, y - 1, z);
         if (level.getTileId(x, y - 1, z) == BlockListener.denseIce.id || level.getTileId(x, y - 1, z) == 0 || level.getMaterial(x, y - 1, z) == Material.SNOW_BLOCK || level.getMaterial(x, y - 1, z) == Material.SNOW || level.getMaterial(x, y - 1, z) == Material.WOOD || level.getMaterial(x, y - 1, z) == Material.WOOL || level.getMaterial(x, y - 1, z) == Material.ICE || level.getMaterial(x, y - 1, z) == Material.LEAVES || level.getMaterial(x, y - 1, z) == Material.PLANT) {
@@ -210,34 +219,36 @@ public class FiniteLiquid extends TemplateBlockBase {
                 }
             }
         }
+
+         */
     }
 
-    @Override
-    public Box getCollisionShape(Level level, int x, int y, int z) {
-        return null;
-    }
+    //@Override
+    //public Box getCollisionShape(Level level, int x, int y, int z) {
+    //    return null;
+    //}
 
     @Override
     public boolean isFullOpaque() {
         return false;
     }
 
-    @Override
-    public boolean isCollidable(int meta, boolean flag) {
-        return flag && meta == 0;
-    }
+    //@Override
+    //public boolean isCollidable(int meta, boolean flag) {
+    //    return flag && meta == 0;
+    //}
 
-    @Override
-    public boolean isSolid(BlockView tileView, int x, int y, int z, int meta) {
-        Material var6 = tileView.getMaterial(x, y, z);
-        if (var6 == this.material) {
-            return false;
-        } else if (var6 == Material.ICE) {
-            return false;
-        } else {
-            return meta == 1 || super.isSolid(tileView, x, y, z, meta);
-        }
-    }
+    //@Override
+    //public boolean isSolid(BlockView tileView, int x, int y, int z, int meta) {
+    //    Material var6 = tileView.getMaterial(x, y, z);
+    //    if (var6 == this.material) {
+    //        return false;
+    //    } else if (var6 == Material.ICE) {
+    //        return false;
+    //    } else {
+    //        return meta == 1 || super.isSolid(tileView, x, y, z, meta);
+    //    }
+    //}
 
     @Override
     public void updateBoundingBox(BlockView tileView, int x, int y, int z) {
@@ -266,4 +277,21 @@ public class FiniteLiquid extends TemplateBlockBase {
     public int getDropCount(Random rand) {
         return 0;
     }
+
+    @Override
+    public boolean canUse(Level level, int x, int y, int z, PlayerBase player) {
+        if (((BlockStateView) level).getBlockState(x, y, z).get(FiniteLiquid.METASUBSTITUTE) < 15)
+            ((BlockStateView) level).setBlockState(x, y, z, BlockListener.finiteLiquid.getDefaultState().with(FiniteLiquid.METASUBSTITUTE, ((BlockStateView) level).getBlockState(x, y, z).get(FiniteLiquid.METASUBSTITUTE) + 1));
+        else
+            ((BlockStateView) level).setBlockState(x, y, z, BlockListener.finiteLiquid.getDefaultState().with(FiniteLiquid.METASUBSTITUTE, 0));
+        return true;
+    }
+
+    @Override
+    public void appendProperties(StateManager.Builder<BlockBase, BlockState> builder) {
+        super.appendProperties(builder);
+        builder.add(METASUBSTITUTE);
+    }
+
+    public static final IntProperty METASUBSTITUTE = IntProperty.of("metasubstitute", 0, 15);
 }

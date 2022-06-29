@@ -8,8 +8,12 @@ import net.minecraft.entity.player.PlayerBase;
 import net.minecraft.level.BlockView;
 import net.minecraft.level.Level;
 import net.minecraft.util.maths.Box;
+import net.modificationstation.stationapi.api.block.BlockState;
 import net.modificationstation.stationapi.api.block.HasMetaNamedBlockItem;
+import net.modificationstation.stationapi.api.level.BlockStateView;
 import net.modificationstation.stationapi.api.registry.Identifier;
+import net.modificationstation.stationapi.api.state.StateManager;
+import net.modificationstation.stationapi.api.state.property.IntProperty;
 import net.modificationstation.stationapi.api.template.block.TemplateBlockBase;
 
 import java.util.Random;
@@ -38,6 +42,7 @@ public class DynamicBasalt extends TemplateBlockBase {
 
     @Override
     public void onScheduledTick(Level level, int x, int y, int z, Random rand) {
+        /*
         int belowMeta = level.getTileMeta(x, y - 1, z);
         if (level.getTileId(x, y - 1, z) == 0) {
             level.placeBlockWithMetaData(x, y - 1, z, BlockListener.dynamicBasalt.id, level.getTileMeta(x, y, z));
@@ -78,6 +83,7 @@ public class DynamicBasalt extends TemplateBlockBase {
                 level.placeBlockWithMetaData(x, y, z, BlockListener.staticBasalt.id, level.getTileMeta(x, y, z));
             }
         }
+         */
     }
 
     @Override
@@ -147,4 +153,21 @@ public class DynamicBasalt extends TemplateBlockBase {
     public int getDropCount(Random rand) {
         return 0;
     }
+
+    @Override
+    public boolean canUse(Level level, int x, int y, int z, PlayerBase player) {
+        if (((BlockStateView) level).getBlockState(x, y, z).get(DynamicBasalt.METASUBSTITUTE) < 15)
+            ((BlockStateView) level).setBlockState(x, y, z, BlockListener.dynamicBasalt.getDefaultState().with(DynamicBasalt.METASUBSTITUTE, ((BlockStateView) level).getBlockState(x, y, z).get(DynamicBasalt.METASUBSTITUTE) + 1));
+        else
+            ((BlockStateView) level).setBlockState(x, y, z, BlockListener.dynamicBasalt.getDefaultState().with(DynamicBasalt.METASUBSTITUTE, 0));
+        return true;
+    }
+
+    @Override
+    public void appendProperties(StateManager.Builder<BlockBase, BlockState> builder) {
+        super.appendProperties(builder);
+        builder.add(METASUBSTITUTE);
+    }
+
+    public static final IntProperty METASUBSTITUTE = IntProperty.of("metasubstitute", 0, 15);
 }

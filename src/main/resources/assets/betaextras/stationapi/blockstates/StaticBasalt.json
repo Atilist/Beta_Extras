@@ -1,0 +1,52 @@
+{
+  "variants": {
+    "metasubstitute=0": {
+      "model": "betaextras:StaticBasalt1"
+    },
+    "metasubstitute=1": {
+      "model": "betaextras:StaticBasalt2"
+    },
+    "metasubstitute=2": {
+      "model": "betaextras:StaticBasalt3"
+    },
+    "metasubstitute=3": {
+      "model": "betaextras:StaticBasalt4"
+    },
+    "metasubstitute=4": {
+      "model": "betaextras:StaticBasalt5"
+    },
+    "metasubstitute=5": {
+      "model": "betaextras:StaticBasalt6"
+    },
+    "metasubstitute=6": {
+      "model": "betaextras:StaticBasalt7"
+    },
+    "metasubstitute=7": {
+      "model": "betaextras:StaticBasalt8"
+    },
+    "metasubstitute=8": {
+      "model": "betaextras:StaticBasalt9"
+    },
+    "metasubstitute=9": {
+      "model": "betaextras:StaticBasalt10"
+    },
+    "metasubstitute=10": {
+      "model": "betaextras:StaticBasalt11"
+    },
+    "metasubstitute=11": {
+      "model": "betaextras:StaticBasalt12"
+    },
+    "metasubstitute=12": {
+      "model": "betaextras:StaticBasalt13"
+    },
+    "metasubstitute=13": {
+      "model": "betaextras:StaticBasalt14"
+    },
+    "metasubstitute=14": {
+      "model": "betaextras:StaticBasalt15"
+    },
+    "metasubstitute=15": {
+      "model": "betaextras:StaticBasalt16"
+    }
+  }
+}

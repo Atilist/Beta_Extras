@@ -56,7 +56,7 @@ public class BlockListener {
         hypaThiccBriccs = new HypaThiccBriccs(of(modID, "HypaThiccBriccs"), Material.STONE).setHardness(1.5F).setTranslationKey(modID,"hypa_thicc_briccs"); // WHY DID THE MISPLACED MOD ID NOT GIVE OFF ANY ERROR!? THIS IS SPARTA!!!
         volcanoBlocks = new VolcanoBlocks(of(modID,"VolcanoBlocks"), Material.STONE).setHardness(1.5F).setBlastResistance(20.0F).setTranslationKey(modID,"volcano_blocks");
         redSandstone = new RedSandstone(of(modID,"RedSandstone"), Material.STONE).setHardness(1.0F).setTranslationKey(modID,"red_sandstone");
-        finiteLiquid = new FiniteLiquid(of(modID,"FiniteLiquid"), Material.LAVA).setHardness(1.0F).setLightEmittance(1.0F).setTranslationKey(modID,"finite_liquid"); // The trinity of pure awfulness
+        finiteLiquid = new FiniteLiquid(of(modID,"FiniteLiquid"), Material.STONE).setHardness(1.0F).setLightEmittance(1.0F).setTranslationKey(modID,"finite_liquid"); // The trinity of pure awfulness
         dynamicBasalt = new DynamicBasalt(of(modID,"DynamicBasalt"), Material.STONE).setHardness(1.5F).setLightEmittance(0.2F).setTranslationKey(modID,"dynamic_basalt"); // The trinity of pure awfulness
         staticBasalt = new StaticBasalt(of(modID,"StaticBasalt"), Material.STONE).setHardness(1.5F).setTranslationKey(modID,"static_basalt"); // The trinity of pure awfulness
         denseSnow = new DenseSnow(of(modID,"DenseSnow"), Material.SNOW_BLOCK).setHardness(0.75F).setTranslationKey(modID,"dense_snow");

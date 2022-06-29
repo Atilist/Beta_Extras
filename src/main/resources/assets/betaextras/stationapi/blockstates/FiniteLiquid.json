@@ -1,0 +1,52 @@
+{
+  "variants": {
+    "metasubstitute=0": {
+      "model": "betaextras:VolcanicLava1"
+    },
+    "metasubstitute=1": {
+      "model": "betaextras:VolcanicLava2"
+    },
+    "metasubstitute=2": {
+      "model": "betaextras:VolcanicLava3"
+    },
+    "metasubstitute=3": {
+      "model": "betaextras:VolcanicLava4"
+    },
+    "metasubstitute=4": {
+      "model": "betaextras:VolcanicLava5"
+    },
+    "metasubstitute=5": {
+      "model": "betaextras:VolcanicLava6"
+    },
+    "metasubstitute=6": {
+      "model": "betaextras:VolcanicLava7"
+    },
+    "metasubstitute=7": {
+      "model": "betaextras:VolcanicLava8"
+    },
+    "metasubstitute=8": {
+      "model": "betaextras:VolcanicLava9"
+    },
+    "metasubstitute=9": {
+      "model": "betaextras:VolcanicLava10"
+    },
+    "metasubstitute=10": {
+      "model": "betaextras:VolcanicLava11"
+    },
+    "metasubstitute=11": {
+      "model": "betaextras:VolcanicLava12"
+    },
+    "metasubstitute=12": {
+      "model": "betaextras:VolcanicLava13"
+    },
+    "metasubstitute=13": {
+      "model": "betaextras:VolcanicLava14"
+    },
+    "metasubstitute=14": {
+      "model": "betaextras:VolcanicLava15"
+    },
+    "metasubstitute=15": {
+      "model": "betaextras:VolcanicLava16"
+    }
+  }
+}
